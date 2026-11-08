@@ -120,10 +120,11 @@ export default function About() {
           {/* ③ 怎么找到我 */}
           <div className="mb-10">
             <h2 className="text-xl font-bold text-[#1d1d1f] mb-4">③ 怎么找到我</h2>
-            <div className="grid md:grid-cols-2 gap-4">
+            <div className="grid md:grid-cols-3 gap-4">
               {[
                 { label: '微信', value: 'yunlinyue' },
                 { label: '邮箱', value: '39764023@qq.com' },
+                { label: '公众号', value: '大红帮帮您' },
               ].map(info => (
                 <div key={info.label} className="p-4 rounded-xl bg-dark-card-hover/50 border border-dark-border">
                   <div className="text-xs text-[#86868b] mb-1">{info.label}</div>
@@ -131,7 +132,7 @@ export default function About() {
                 </div>
               ))}
             </div>
-            <p className="text-xs text-[#86868b] mt-3">想聊聊优势定位、管理数字化或营销业绩，微信或邮箱都能找到我。</p>
+            <p className="text-xs text-[#86868b] mt-3">想聊聊优势定位、管理数字化或营销业绩，微信、邮箱或公众号「大红帮帮您」都能找到我。</p>
           </div>
 
           {/* 内容说明与版权 */}

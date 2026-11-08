@@ -36,7 +36,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-10 rounded-xl border border-black/[.06] bg-white/70 px-4 py-3 flex flex-col md:flex-row md:items-center justify-between gap-2">
-          <span className="text-[13px] text-[#6e6e73]">读到有想法、想提问，或想聊聊职场与业务？欢迎给站长写信。</span>
+          <span className="text-[13px] text-[#6e6e73]">读到有想法、想提问，或想聊聊职场与业务？欢迎给站长写信，也欢迎关注公众号「大红帮帮您」。</span>
           <a href={FEEDBACK_MAILTO} className="text-[13px] font-medium text-[#0071e3] hover:underline whitespace-nowrap">读者来信 · {FEEDBACK_EMAIL} ↗</a>
         </div>
         <div className="mt-10 pt-6 border-t border-black/[.06] flex flex-col md:flex-row justify-between gap-2 text-[12px] text-[#86868b]">
