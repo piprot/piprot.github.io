@@ -88,7 +88,7 @@ const PROJECTS = [
   },
 ]
 
-const OWNER_MAIL = '554176937@qq.com'
+const OWNER_MAIL = '39764023@qq.com'
 
 const fadeUp = {
   initial: { opacity: 0, y: 24 },

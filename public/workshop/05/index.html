@@ -89,7 +89,7 @@
       <span><b>会员免费</b> 非会员 39 元含茶歇</span>
     </div>
     <div class="cta">
-      <button class="btn main" onclick="copyWeChat(this)">立即报名（微信 ikoning365）</button>
+      <button class="btn main" onclick="copyWeChat(this)">立即报名（微信 yunlinyue）</button>
       <a class="btn ghost" href="/workshops">← 返回全部课程</a>
     </div>
     <div style="margin:22px auto 0;max-width:860px;border:1px solid var(--line);border-radius:16px;background:var(--card);padding:18px 22px;display:flex;gap:22px;align-items:center;text-align:left">
@@ -220,15 +220,15 @@
   </script>
 
   <div class="foot">
-    微信 ikoning365 · 邮箱 554176937@qq.com<br>
-    © 2026 杨辉（玄龙堂主理人） · 拆书帮广州小蛮腰分舵
+    微信 yunlinyue · 邮箱 39764023@qq.com<br>
+    © 2026 云月峻岭 · 拆书帮广州小蛮腰分舵
   </div>
 
 </div>
 
 <script>
 function copyWeChat(btn){
-  var t='ikoning365';
+  var t='yunlinyue';
   function ok(){var o=btn.textContent;btn.textContent='✅ 已复制：'+t;setTimeout(function(){btn.textContent=o},2000)}
   if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok,function(){fb()})}else{fb()}
   function fb(){var i=document.createElement('input');i.value=t;document.body.appendChild(i);i.select();try{document.execCommand('copy');ok()}catch(e){alert('微信号：'+t)}document.body.removeChild(i)}

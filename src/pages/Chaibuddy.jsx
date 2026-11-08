@@ -71,8 +71,8 @@ const DEFAULT_MODE = {
 const ALL_MODES = { ...MODES, start: DEFAULT_MODE }
 
 const CONTACT_URL = 'https://www.chaishubang.com/'
-const OWNER_MAIL = '554176937@qq.com'
-const OWNER_WX = 'ikoning365'
+const OWNER_MAIL = '39764023@qq.com'
+const OWNER_WX = 'yunlinyue'
 const NEEDS_API = 'https://api.aibay.asia/needs/needs'
 
 // ===== 牵线弹窗表单 =====
@@ -96,7 +96,7 @@ function BrokerModal({ p, onClose }) {
   }, [onClose, state])
 
   const modeNames = picked.map(id => (ALL_MODES[id] ? ALL_MODES[id].full : '另有想法'))
-  const mailtoHref = `mailto:${OWNER_MAIL}?subject=${encodeURIComponent(`拆搭子合作牵线 · ${form.name.trim() || '（未署名）'}`)}&body=${encodeURIComponent(`杨辉你好，我是${form.name.trim()}${form.rudder.trim() ? `（${form.rudder.trim()}）` : ''}。\n\n想聊的合作模式：${modeNames.length ? modeNames.join('；') : '待定'}\n\n我的想法：${form.note.trim() || '（见面聊）'}\n\n我的联系方式：${form.contact.trim() || '（邮件回复即可）'}`)}`
+  const mailtoHref = `mailto:${OWNER_MAIL}?subject=${encodeURIComponent(`拆搭子合作牵线 · ${form.name.trim() || '（未署名）'}`)}&body=${encodeURIComponent(`云月峻岭你好，我是${form.name.trim()}${form.rudder.trim() ? `（${form.rudder.trim()}）` : ''}。\n\n想聊的合作模式：${modeNames.length ? modeNames.join('；') : '待定'}\n\n我的想法：${form.note.trim() || '（见面聊）'}\n\n我的联系方式：${form.contact.trim() || '（邮件回复即可）'}`)}`
 
   const submit = async e => {
     e.preventDefault()
@@ -134,7 +134,7 @@ function BrokerModal({ p, onClose }) {
             <div className="w-14 h-14 mx-auto rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-2xl">🤝</div>
             <h3 className="text-lg font-black text-[#1d1d1f] mt-4">牵线卡已发出！</h3>
             <p className="text-sm text-[#6e6e73] mt-2 leading-relaxed">
-              你的合作意向已发到站长邮箱（{OWNER_MAIL}），杨辉会通过你留的联系方式尽快回复你。
+              你的合作意向已发到站长邮箱（{OWNER_MAIL}），云月峻岭会通过你留的联系方式尽快回复你。
             </p>
             <button type="button" onClick={onClose} className="mt-6 px-6 py-2.5 rounded-xl text-xs font-bold bg-[#1d1d1f] text-white hover:bg-[#3a3a3c] transition-colors">好的</button>
           </div>

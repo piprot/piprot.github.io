@@ -10,7 +10,7 @@ export default async function fetchJSON(path) {
   return res.json()
 }
 
-/** 玄龙（站长）双名判定：站方账号名 杨辉，品牌名 玄龙 */
+/** 玄龙（站长）双名判定：站方账号名 云月峻岭，品牌名 玄龙 */
 export function isShifu(user) {
-  return user === '玄龙' || user === '杨辉'
+  return user === '玄龙' || user === '云月峻岭'
 }
