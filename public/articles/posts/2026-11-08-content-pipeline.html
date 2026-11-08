@@ -21,15 +21,36 @@
 <path d="M10 53h44" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".4"/></svg><span class="btext">云月峻岭<small>YUNYUE JUNLING</small></span></a>
     <nav class="links">
       <a href="/">首页</a>
-      <a href="/services/">服务与做法</a>
-      <a href="/questions/">常问问题</a>
-      <a href="/methods/">方法库</a>
-      <a href="/leadership/">升维领导力</a>
-      <a href="/digital/">数字化</a>
+      <div class="nav-group">
+          <button type="button" class="nav-label">服务</button>
+          <div class="nav-sub">
+          <a href="/services/">服务与做法</a>
+          <a href="/cases/">案例</a>
+          </div>
+        </div>
+      <div class="nav-group">
+          <button type="button" class="nav-label">方法</button>
+          <div class="nav-sub">
+          <a href="/methods/">方法库</a>
+          <a href="/questions/">常问问题</a>
+          <a href="/leadership/">升维领导力</a>
+          </div>
+        </div>
+      <div class="nav-group">
+          <button type="button" class="nav-label">数字化</button>
+          <div class="nav-sub">
+          <a href="/digital/">数字化工具箱</a>
+          <a href="/digital/workbench/">AI 工作台</a>
+          </div>
+        </div>
       <a href="/writing/" class="on">文章</a>
-      <a href="/cases/">案例</a>
-      <a href="/about/">关于</a>
-      <a href="/contact/">联系</a>
+      <div class="nav-group">
+          <button type="button" class="nav-label">关于</button>
+          <div class="nav-sub">
+          <a href="/about/">关于我</a>
+          <a href="/contact/">联系</a>
+          </div>
+        </div>
     </nav>
   </div>
 </header>
@@ -132,13 +153,14 @@
     <div class="sitemap">
       <a href="/">首页</a>
         <a href="/services/">服务与做法</a>
-        <a href="/questions/">常问问题</a>
-        <a href="/methods/">方法库</a>
-        <a href="/leadership/">升维领导力</a>
-        <a href="/digital/">数字化</a>
-        <a href="/writing/">文章</a>
         <a href="/cases/">案例</a>
-        <a href="/about/">关于</a>
+        <a href="/methods/">方法库</a>
+        <a href="/questions/">常问问题</a>
+        <a href="/leadership/">升维领导力</a>
+        <a href="/digital/">数字化工具箱</a>
+        <a href="/digital/workbench/">AI 工作台</a>
+        <a href="/writing/">文章</a>
+        <a href="/about/">关于我</a>
         <a href="/contact/">联系</a>
     </div>
     <div class="foot">
@@ -147,5 +169,27 @@
     </div>
   </div>
 </footer>
+<script>
+(function(){
+  var groups = document.querySelectorAll('.nav-group');
+  if (!groups.length) return;
+  groups.forEach(function(g){
+    var btn = g.querySelector('.nav-label');
+    if (!btn) return;
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      var wasOpen = g.classList.contains('open');
+      groups.forEach(function(x){ x.classList.remove('open'); });
+      if (!wasOpen) g.classList.add('open');
+    });
+  });
+  document.addEventListener('click', function(){
+    groups.forEach(function(x){ x.classList.remove('open'); });
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape') groups.forEach(function(x){ x.classList.remove('open'); });
+  });
+})();
+</script>
 </body>
 </html>
