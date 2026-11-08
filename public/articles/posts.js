@@ -1,0 +1,10 @@
+/* 自动生成：文章清单。请勿手改，new_post.py 会维护 */
+window.POSTS = [
+  {
+    "title": "一个人做内容，先修一条流水线",
+    "date": "2026-11-08",
+    "slug": "content-pipeline",
+    "url": "posts/2026-11-08-content-pipeline.html",
+    "summary": "很多人做内容卡在同一处：每周一打开文档，选题要重新想，资料要重新翻，上次那套好用的做法又忘在哪儿了。不是写得慢，是每次都从零开始。 我从 IMA 知识库里挑…"
+  }
+]

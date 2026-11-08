@@ -31,6 +31,7 @@ export default function Footer() {
               <li><Link to="/skills" className="hover:text-[#0071e3] transition-colors">拆技能工坊</Link></li>
               <li><a href="https://www.aibay.asia" target="_blank" rel="noreferrer" className="hover:text-[#0071e3] transition-colors">aibay.asia</a></li>
               <li><a href={FEEDBACK_MAILTO} className="hover:text-[#0071e3] transition-colors">读者来信</a></li>
+              <li><a href="/articles/" className="hover:text-[#0071e3] transition-colors">文章归档</a></li>
             </ul>
           </div>
         </div>
