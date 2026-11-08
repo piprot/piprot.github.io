@@ -32,3 +32,6 @@ api_books.json
 
 # local claude settings
 .claude/settings.local.json
+
+# 技能安全红线：公众号粘贴版 / 飞轮台账 / 本地草稿绝不上传
+_local/
