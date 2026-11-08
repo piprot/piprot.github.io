@@ -9,6 +9,7 @@
   body[data-tone="writing"]{--accent:#A5543B;--accent2:#D08B6B;--tint:#F7EBE4}
   body[data-tone="about"]{--accent:#B4653A;--accent2:#C9903F;--tint:#F7EDE3}
   body[data-tone="contact"]{--accent:#57703E;--accent2:#93B06A;--tint:#EEF3E6}
+  body[data-tone="cases"]{--accent:#5A5F8C;--accent2:#9AA0CC;--tint:#EFEFF8}
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
   body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased}
