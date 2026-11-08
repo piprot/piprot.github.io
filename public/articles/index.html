@@ -1,71 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>文章 · 云月峻岭</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>云月峻岭 · 职场咨询 / 管理数字化 / 营销业绩提升</title>
+<meta name="description" content="云月峻岭文章归档：内容方法、职场咨询、销售框架与数字化落地的长文。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231B2A28'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%23FAF8F3' font-family='sans-serif'%3E%E4%BA%91%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
-<script src="config.js"></script>
-<script src="posts.js"></script>
 </head>
 <body>
-<main class="wrap">
-  <header class="hero">
-    <h1 id="site-name">…</h1>
-    <p id="tagline" class="tagline"></p>
-    <p class="meta" id="site-meta"></p>
-  </header>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/">云月峻岭<small>YUNYUE JUNLING</small></a>
+    <nav class="links">
+      <a href="/">首页</a>
+      <a href="/services/">服务与做法</a>
+      <a href="/questions/">常问问题</a>
+      <a href="/methods/">方法库</a>
+      <a href="/digital/">数字化</a>
+      <a href="/writing/" class="on">文章</a>
+      <a href="/about/">关于</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page-hero">
+    <div class="wrap">
+      <p class="kicker">文章归档</p>
+      <h1>写下来的，都放这里</h1>
+      <p>公众号「大红帮帮您」与本站同步。按发布日期排列，点开就是全文。</p>
+    </div>
+  </div>
 
   <section>
-    <h2 class="sec-title">最新文章</h2>
-    <div id="post-list" class="post-list">
-      <p class="empty">还没有文章。对 WorkBuddy 说「用这段素材帮我在网站上发一篇文章」开始。</p>
+    <div class="wrap article-page">
+      <p class="kicker">已发布</p>
+      <h2>2026 年 11 月</h2>
+      <div id="post-list" class="post-list">
+        <a class="post" href="posts/2026-11-08-content-pipeline.html">
+          <span class="date">2026-11-08 · 内容方法</span>
+          <h3>一个人做内容，先修一条流水线</h3>
+          <p>很多人做内容卡在同一处：每周一打开文档，选题要重新想，资料要重新翻，上次那套好用的做法又忘在哪儿了。不是写得慢，是每次都从零开始。文章按「能复用的库 / 让对话沉淀 / 把输出固定成流水线」三层拆开。</p>
+          <span class="more">读全文 →</span>
+        </a>
+      </div>
+      <p class="note">这里是完整归档；<a href="/writing/">主站文章页</a>另有精选与接下来的写作方向。</p>
     </div>
   </section>
 
-  <footer class="foot">
-    <p><a href="/">← 返回云月峻岭主站</a></p>
-    <p id="foot-line"></p>
-    <p id="feedback-line"></p>
-  </footer>
-</main>
+  <section style="border-bottom:none">
+    <div class="wrap">
+      <div class="letter">
+        <div>
+          <h2>读者来信</h2>
+          <p>读到有想法、想提问，或想聊聊职场与业务？写封信给我，我都看。</p>
+        </div>
+        <a class="cta" href="mailto:39764023@qq.com?subject=%E8%AF%BB%E8%80%85%E6%9D%A5%E4%BF%A1%20%C2%B7%20%E4%BA%91%E6%9C%88%E5%B3%BB%E5%B2%AD">写信给我 ↗</a>
+      </div>
+    </div>
+  </section>
 
+</main>
+<footer>
+  <div class="wrap">
+    <div class="sitemap">
+      <a href="/">首页</a>
+        <a href="/services/">服务与做法</a>
+        <a href="/questions/">常问问题</a>
+        <a href="/methods/">方法库</a>
+        <a href="/digital/">数字化</a>
+        <a href="/writing/">文章</a>
+        <a href="/about/">关于</a>
+    </div>
+    <div class="foot">
+      <span>© 2026 云月峻岭 · 由 GitHub Pages 托管</span>
+      <span><a href="/articles/">文章归档</a> · <a href="mailto:39764023@qq.com?subject=%E8%AF%BB%E8%80%85%E6%9D%A5%E4%BF%A1%20%C2%B7%20%E4%BA%91%E6%9C%88%E5%B3%BB%E5%B2%AD">读者来信</a> · 微信 yunlinyue · 公众号「大红帮帮您」</span>
+    </div>
+  </div>
+</footer>
+<script src="config.js"></script>
+<script src="posts.js"></script>
 <script>
 (function () {
-  var cfg = window.SITE_CONFIG || {};
-  document.title = '文章 · ' + (cfg.site_name || '我的网站');
-  document.getElementById('site-name').textContent = cfg.site_name || '我的网站';
-  document.getElementById('tagline').textContent = cfg.tagline || '';
-
-  var bits = [];
-  if (cfg.author) bits.push(cfg.author);
-  if (cfg.github_user && String(cfg.github_user).indexOf('your-') !== 0) {
-    bits.push('GitHub: ' + cfg.github_user);
-  }
-  document.getElementById('site-meta').textContent = bits.join(' · ');
-
-  var foot = [];
-  if (cfg.wechat_account) foot.push('微信搜索「' + cfg.wechat_account + '」看更多');
-  foot.push('由 GitHub Pages 免费托管');
-  document.getElementById('foot-line').textContent = foot.join(' · ');
-
-  // 反馈入口：QQ 邮箱展示（读者来信经邮箱回流 ima「网站邮箱信息」目录，驱动下一轮迭代）
-  if (cfg.feedback_email && String(cfg.feedback_email).indexOf('example.com') === -1) {
-    var fb = document.getElementById('feedback-line');
-    fb.innerHTML = '有想法想对站长说？<a href="mailto:' + cfg.feedback_email + '">' + cfg.feedback_email + '</a>（QQ 邮箱）';
-  }
-
-  var posts = window.POSTS || [];
   var box = document.getElementById('post-list');
-  if (posts.length) {
-    box.innerHTML = posts.map(function (p) {
-      return '<article class="post-card">'
-        + '<a class="post-link" href="' + p.url + '">' + p.title + '</a>'
-        + '<p class="post-summary">' + (p.summary || '') + '</p>'
-        + '<p class="post-date">' + p.date + '</p>'
-        + '</article>';
-    }).join('');
-  }
+  if (!box) return;
+  var seen = {};
+  Array.prototype.forEach.call(box.querySelectorAll('a.post'), function (a) {
+    seen[a.getAttribute('href')] = 1;
+  });
+  (window.POSTS || []).forEach(function (p) {
+    if (!p.url || seen[p.url] || seen['posts/' + p.url.split('/').pop()]) return;
+    seen[p.url] = 1;
+    var a = document.createElement('a');
+    a.className = 'post';
+    a.href = p.url;
+    var d = document.createElement('span'); d.className = 'date';
+    d.textContent = (p.date || '') + ' · 文章';
+    var h = document.createElement('h3'); h.textContent = p.title || '未命名';
+    var s = document.createElement('p'); s.textContent = p.summary || '';
+    var m = document.createElement('span'); m.className = 'more'; m.textContent = '读全文 →';
+    a.appendChild(d); a.appendChild(h); a.appendChild(s); a.appendChild(m);
+    box.appendChild(a);
+  });
 })();
 </script>
 </body>
