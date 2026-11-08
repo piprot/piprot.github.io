@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>云月峻岭 · 职场咨询 / 管理数字化 / 营销业绩提升</title>
+<meta name="description" content="云月峻岭方法库：需求导向销售五环、异议处理五步法、FABE 价值翻译、流程化思维、知识库两层结构等，逐条标注出处。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231B2A28'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%23FAF8F3' font-family='sans-serif'%3E%E4%BA%91%3C/text%3E%3C/svg%3E">
+<style>
+  :root{--ink:#1B2A28;--paper:#FAF8F3;--card:#FFFFFF;--accent:#B4653A;--line:#E5DFD4;--muted:#6B756F;--soft:#F1EDE4}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+  header{position:sticky;top:0;z-index:10;background:rgba(250,248,243,.94);border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:66px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
+  .brand{font-size:19px;font-weight:800;letter-spacing:.06em}
+  .brand small{display:block;font-size:10px;font-weight:500;letter-spacing:.22em;color:var(--muted);margin-top:-2px}
+  .links{display:flex;gap:20px;font-size:13.5px;color:var(--muted);flex-wrap:wrap}
+  .links a:hover,.links a.on{color:var(--accent)}
+  .links a.on{font-weight:700}
+  .hero{padding:88px 0 72px;border-bottom:1px solid var(--line)}
+  .eyebrow{font-size:12px;letter-spacing:.24em;color:var(--accent);font-weight:700;margin:0 0 20px}
+  .hero h1{font-size:clamp(32px,5.4vw,56px);line-height:1.3;margin:0 0 24px;font-weight:800;letter-spacing:-.02em}
+  .hero h1 em{font-style:normal;color:var(--accent)}
+  .lead{font-size:17px;color:#3E4A46;max-width:660px;margin:0 0 32px}
+  .tags{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:36px}
+  .tag{font-size:13px;padding:7px 16px;border:1px solid var(--line);border-radius:999px;background:var(--card)}
+  .cta{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:#fff;padding:13px 26px;border-radius:10px;font-size:14px;font-weight:600}
+  .cta:hover{background:var(--accent)}
+  .cta.alt{background:transparent;color:var(--ink);border:1px solid var(--line)}
+  .cta.alt:hover{border-color:var(--accent);color:var(--accent);background:transparent}
+  .btns{display:flex;gap:12px;flex-wrap:wrap}
+  section{padding:72px 0;border-bottom:1px solid var(--line)}
+  section.tight{padding:52px 0}
+  .kicker{font-size:12px;letter-spacing:.2em;color:var(--accent);font-weight:700;margin:0 0 10px}
+  h2{font-size:clamp(24px,3.4vw,34px);margin:0 0 14px;font-weight:800;letter-spacing:-.01em}
+  .sub{color:var(--muted);font-size:15px;margin:0 0 36px;max-width:720px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  .card,.method{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px}
+  .card .num,.method .num{font-size:12px;color:var(--accent);font-weight:700;letter-spacing:.14em;margin-bottom:14px}
+  .card h3,.method h3{font-size:17px;margin:0 0 10px;font-weight:700}
+  .card p,.method p{font-size:14px;color:var(--muted);margin:0}
+  .card a.more,.more{display:inline-block;margin-top:14px;font-size:13px;font-weight:700;color:var(--accent)}
+  .quote{background:var(--soft);border-left:3px solid var(--accent);padding:22px 26px;border-radius:0 10px 10px 0;font-size:17px;font-weight:600;max-width:760px}
+  .contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .contact-item{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
+  .contact-item .label{font-size:12px;color:var(--muted);letter-spacing:.1em;margin-bottom:8px}
+  .contact-item .value{font-size:17px;font-weight:700;word-break:break-all}
+  .note{font-size:13px;color:var(--muted);margin:22px 0 0}
+  .post{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px;transition:border-color .2s,transform .2s}
+  .post:hover{border-color:var(--accent);transform:translateY(-2px)}
+  .post .date{font-size:12px;color:var(--accent);letter-spacing:.1em}
+  .post h3{font-size:20px;margin:10px 0 10px}
+  .post p{font-size:14px;color:var(--muted);margin:0 0 14px}
+  .letter{background:var(--ink);color:#F3EFE7;border-radius:16px;padding:38px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+  .letter h2{color:#fff;margin:0 0 8px;font-size:24px}
+  .letter p{color:#BFC9C4;font-size:14px;margin:0}
+  .letter .cta{background:#fff;color:var(--ink)}
+  .letter .cta:hover{background:var(--accent);color:#fff}
+  footer{padding:40px 0 56px;font-size:13px;color:var(--muted)}
+  .foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .foot a:hover{color:var(--accent)}
+  .page-hero{padding:62px 0 50px;border-bottom:1px solid var(--line);background:var(--soft)}
+  .page-hero h1{font-size:clamp(28px,4.2vw,42px);margin:0 0 14px;font-weight:800;letter-spacing:-.01em}
+  .page-hero p{font-size:16px;color:#3E4A46;margin:0;max-width:760px}
+  .badge{display:inline-block;font-size:11px;padding:3px 11px;border-radius:999px;background:#fff;border:1px solid var(--line);color:var(--accent);font-weight:700;letter-spacing:.06em;margin-bottom:12px}
+  .method{display:flex;flex-direction:column}
+  .method .src{margin-top:auto;padding-top:14px;font-size:12px;color:var(--muted);border-top:1px dashed var(--line)}
+  .list{list-style:none;padding:0;margin:0}
+  .list li{border-bottom:1px solid var(--line);padding:20px 0}
+  .list li:last-child{border-bottom:none}
+  .list h3{font-size:17px;margin:0 0 6px;font-weight:700}
+  .list p{font-size:14px;color:var(--muted);margin:0}
+  table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:14px}
+  th,td{padding:13px 16px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:var(--soft);font-weight:700}
+  tr:last-child td{border-bottom:none}
+  .notice{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:22px 26px;font-size:13px;color:var(--muted)}
+  .notice strong{color:var(--ink);font-size:14px}
+  .notice p{margin:8px 0 0}
+  .step{display:flex;gap:16px;margin-bottom:20px}
+  .step .n{flex:0 0 34px;height:34px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-size:14px;font-weight:700}
+  .step h3{margin:2px 0 4px;font-size:16px}
+  .step p{margin:0;font-size:14px;color:var(--muted)}
+  .sitemap{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:12px}
+  .sitemap a:hover{color:var(--accent)}
+  @media(max-width:760px){
+    .nav{padding:12px 0;gap:10px}
+    .links{gap:12px;font-size:13px}
+    .hero{padding:56px 0 48px}
+    .grid3,.grid2,.contact-grid{grid-template-columns:1fr}
+    section{padding:52px 0}
+    .page-hero{padding:44px 0 36px}
+    table{font-size:13px}
+    th,td{padding:10px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/">云月峻岭<small>YUNYUE JUNLING</small></a>
+    <nav class="links">
+      <a href="/">首页</a>
+      <a href="/services/">服务与做法</a>
+      <a href="/questions/">常问问题</a>
+      <a href="/methods/" class="on">方法库</a>
+      <a href="/digital/">数字化</a>
+      <a href="/writing/">文章</a>
+      <a href="/about/">关于</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="page-hero">
+    <div class="wrap">
+      <p class="kicker">方法库</p>
+      <h1>把用得上的框架，摆到台面上</h1>
+      <p>十条方法卡，按「营销业绩 / 管理数字化 / 咨询决策」分了组。每条只写要点和适用处，出处随卡标注，方便你对照、也方便你质疑。</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <p class="kicker">A · 营销业绩提升</p>
+      <h2>把成交拆成可练的动作</h2>
+      <p class="sub">这一组来自公开销售课程笔记的脱敏提炼与业务研究笔记，去掉了行业专属话术与客户信息，只留通用框架。</p>
+      <div class="grid2">
+        <div class="method">
+          <div class="num">A01 / 流程</div><h3>需求导向销售五环与成交四要素</h3>
+          <p>五环：电话约访 → 接触面谈 → 方案呈现 → 异议处理 → 促成。四要素：信任是前提、需求是基础、帮助与价值是关键、急迫性是临门一脚。核心竞争力是专业度与服务，不是产品或价格。</p>
+          <div class="src">出处：21tb 云课堂课程笔记（脱敏提炼）</div>
+        </div>
+        <div class="method">
+          <div class="num">A02 / 异议</div><h3>异议处理五步法</h3>
+          <p>倾听 → 认同 → 澄清 → 转换 → 促单。异议不等于拒绝，而是兴趣信号；四个常见根源是信任、需求未挖掘、方案不匹配、不急迫。每处理完一个异议，要顺势回到促成。</p>
+          <div class="src">出处：21tb 云课堂课程笔记（脱敏提炼）</div>
+        </div>
+        <div class="method">
+          <div class="num">A03 / 节奏</div><h3>促成的 40 / 30 / 20 / 10</h3>
+          <p>一种值得对照的时间分配：约 40% 建立信任、30% 观念培养与需求激发、20% 产品说明，促成本身只占 10%。促成不是临门强推，而是前面都做实之后自然发生的结果。</p>
+          <div class="src">出处：21tb 云课堂课程笔记（脱敏提炼，为课程观点）</div>
+        </div>
+        <div class="method">
+          <div class="num">A04 / 表达</div><h3>FABE 价值翻译</h3>
+          <p>把「产品有什么功能」翻译成「对方能得到什么、能自己算出来的结果」。价值展示的关键不是罗列参数，而是让对方看见差距与收益。</p>
+          <div class="src">出处：代发产品价值展示业务研究笔记</div>
+        </div>
+        <div class="method">
+          <div class="num">A05 / 诊断</div><h3>QuickStar 四步法</h3>
+          <p>调频道（身份切换）→ 找问题（三层风险穿透）→ 抛法条（专业击穿认知盲区）→ 给方案。要点在前 80% 的时间用于诊断，方案本身只占后段一小截。</p>
+          <div class="src">出处：21tb 云课堂课程笔记（脱敏提炼）</div>
+        </div>
+        <div class="method">
+          <div class="num">A06 / 复盘</div><h3>五步复盘法</h3>
+          <p>达成风险共识 → 回归持仓分析 → 强调再平衡 → 回顾账户目标 → 讨论配什么。可迁移的部分是顺序：先对齐风险认知，再谈具体配置，不反过来。</p>
+          <div class="src">出处：21tb 云课堂课程笔记（脱敏提炼，已去掉行业专属内容）</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="kicker">B · 管理数字化</p>
+      <h2>先理流程，再谈工具</h2>
+      <p class="sub">这一组是公开资料的要点摘要，原作者与来源随卡标注；本站只做索引与提炼，不转载原文。</p>
+      <div class="grid2">
+        <div class="method">
+          <div class="num">B01 / 流程</div><h3>流程化思维</h3>
+          <p>以系统性、结构化的方式分析和优化业务活动：把复杂任务拆成有序步骤，明确节点关系与规则，让结果可预测、可交接、可复制。</p>
+          <div class="src">出处：飞书 wiki 剪藏《流程化思维实战指南》要点摘要</div>
+        </div>
+        <div class="method">
+          <div class="num">B02 / 沉淀</div><h3>知识库两层结构</h3>
+          <p>主目录下只放「资料」与「总结」两层：前者存原始解析内容，后者存整理后的结构化结论。每日做主题分类、去重合并，出一份清单，人工确认后才入库。</p>
+          <div class="src">出处：ima 剪藏《AI知识库搭建指南》（Ai飛老师，元宝 AI 辅助整理）</div>
+        </div>
+        <div class="method">
+          <div class="num">B03 / 复用</div><h3>对话—沉淀—复用闭环</h3>
+          <p>每次与 AI 对话后自动提取有效信息、生成结构化单页文档回存知识库；新任务先检索历史案例与方法再出方案。价值在知识复利，不在单次提速。</p>
+          <div class="src">出处：ima 剪藏《AI协作工作流构建方法》（一轩正在创造，元宝 AI 辅助整理）</div>
+        </div>
+      </div>
+      <a class="more" href="/digital/">看工具怎么按场景选 →</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="kicker">C · 咨询与决策</p>
+      <h2>把纠结变成能算的题</h2>
+      <div class="grid2">
+        <div class="method">
+          <div class="num">C01 / 取舍</div><h3>ROI 科学决策三角形</h3>
+          <p>宽度：把关键收益项与关键成本项列清楚；深度：给优先级、做部分定量与定量公式；高度：放回长期视角。三个维度分开看，才不会在单点上反复摇摆。</p>
+          <div class="src">出处：飞书 wiki 剪藏《ROI 清单体笔记》要点摘要</div>
+        </div>
+        <div class="method">
+          <div class="num">C02 / 盘点</div><h3>资源盘点九维</h3>
+          <p>时间、财产、认知、工作、心理、关系、身体、生活、精神。动手之前先回答「我有什么」，再谈「我要做什么」——顺序反了，计划就容易悬空。</p>
+          <div class="src">出处：飞书 wiki 剪藏《副业资源盘点表》要点摘要</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tight"><div class="wrap">
+<div class="notice">
+  <strong>关于本站资料</strong>
+  <p>方法卡片与工具清单整理自我长期维护的知识库：一部分是公开课程笔记的脱敏提炼，一部分是第三方公开资料的要点摘要，出处随条目标注。本站只做要点整理与索引，不转载原文；不含客户信息、聊天记录、内部数据与任何未核实的案例或成果数字。如涉及原作者权益，欢迎来信调整或撤下。</p>
+</div>
+</div></section>
+
+
+  <section style="border-bottom:none">
+    <div class="wrap">
+      <div class="letter">
+        <div>
+          <h2>哪个框架想细聊？</h2>
+          <p>带上你的实际场景来信，比单独讨论框架更有用。</p>
+        </div>
+        <a class="cta" href="mailto:39764023@qq.com?subject=%E8%AF%BB%E8%80%85%E6%9D%A5%E4%BF%A1%20%C2%B7%20%E4%BA%91%E6%9C%88%E5%B3%BB%E5%B2%AD">写信给我 ↗</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="sitemap">
+      <a href="/">首页</a>
+        <a href="/services/">服务与做法</a>
+        <a href="/questions/">常问问题</a>
+        <a href="/methods/">方法库</a>
+        <a href="/digital/">数字化</a>
+        <a href="/writing/">文章</a>
+        <a href="/about/">关于</a>
+    </div>
+    <div class="foot">
+      <span>© 2026 云月峻岭 · 由 GitHub Pages 托管</span>
+      <span><a href="/articles/">文章归档</a> · <a href="mailto:39764023@qq.com?subject=%E8%AF%BB%E8%80%85%E6%9D%A5%E4%BF%A1%20%C2%B7%20%E4%BA%91%E6%9C%88%E5%B3%BB%E5%B2%AD">读者来信</a> · 微信 yunlinyue · 公众号「大红帮帮您」</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

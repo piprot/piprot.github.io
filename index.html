@@ -14,11 +14,12 @@
   a{color:inherit;text-decoration:none}
   .wrap{max-width:1060px;margin:0 auto;padding:0 24px}
   header{position:sticky;top:0;z-index:10;background:rgba(250,248,243,.94);border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
-  .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:66px;flex-wrap:wrap}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:66px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
   .brand{font-size:19px;font-weight:800;letter-spacing:.06em}
   .brand small{display:block;font-size:10px;font-weight:500;letter-spacing:.22em;color:var(--muted);margin-top:-2px}
-  .links{display:flex;gap:26px;font-size:14px;color:var(--muted);flex-wrap:wrap}
-  .links a:hover{color:var(--accent)}
+  .links{display:flex;gap:20px;font-size:13.5px;color:var(--muted);flex-wrap:wrap}
+  .links a:hover,.links a.on{color:var(--accent)}
+  .links a.on{font-weight:700}
   .hero{padding:88px 0 72px;border-bottom:1px solid var(--line)}
   .eyebrow{font-size:12px;letter-spacing:.24em;color:var(--accent);font-weight:700;margin:0 0 20px}
   .hero h1{font-size:clamp(32px,5.4vw,56px);line-height:1.3;margin:0 0 24px;font-weight:800;letter-spacing:-.02em}
@@ -32,14 +33,17 @@
   .cta.alt:hover{border-color:var(--accent);color:var(--accent);background:transparent}
   .btns{display:flex;gap:12px;flex-wrap:wrap}
   section{padding:72px 0;border-bottom:1px solid var(--line)}
+  section.tight{padding:52px 0}
   .kicker{font-size:12px;letter-spacing:.2em;color:var(--accent);font-weight:700;margin:0 0 10px}
   h2{font-size:clamp(24px,3.4vw,34px);margin:0 0 14px;font-weight:800;letter-spacing:-.01em}
-  .sub{color:var(--muted);font-size:15px;margin:0 0 36px;max-width:680px}
+  .sub{color:var(--muted);font-size:15px;margin:0 0 36px;max-width:720px}
   .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px}
-  .card .num{font-size:12px;color:var(--accent);font-weight:700;letter-spacing:.14em;margin-bottom:14px}
-  .card h3{font-size:17px;margin:0 0 10px;font-weight:700}
-  .card p{font-size:14px;color:var(--muted);margin:0}
+  .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  .card,.method{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px}
+  .card .num,.method .num{font-size:12px;color:var(--accent);font-weight:700;letter-spacing:.14em;margin-bottom:14px}
+  .card h3,.method h3{font-size:17px;margin:0 0 10px;font-weight:700}
+  .card p,.method p{font-size:14px;color:var(--muted);margin:0}
+  .card a.more,.more{display:inline-block;margin-top:14px;font-size:13px;font-weight:700;color:var(--accent)}
   .quote{background:var(--soft);border-left:3px solid var(--accent);padding:22px 26px;border-radius:0 10px 10px 0;font-size:17px;font-weight:600;max-width:760px}
   .contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
   .contact-item{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
@@ -51,7 +55,6 @@
   .post .date{font-size:12px;color:var(--accent);letter-spacing:.1em}
   .post h3{font-size:20px;margin:10px 0 10px}
   .post p{font-size:14px;color:var(--muted);margin:0 0 14px}
-  .post .more{font-size:13px;font-weight:700;color:var(--ink)}
   .letter{background:var(--ink);color:#F3EFE7;border-radius:16px;padding:38px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
   .letter h2{color:#fff;margin:0 0 8px;font-size:24px}
   .letter p{color:#BFC9C4;font-size:14px;margin:0}
@@ -60,12 +63,39 @@
   footer{padding:40px 0 56px;font-size:13px;color:var(--muted)}
   .foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   .foot a:hover{color:var(--accent)}
+  .page-hero{padding:62px 0 50px;border-bottom:1px solid var(--line);background:var(--soft)}
+  .page-hero h1{font-size:clamp(28px,4.2vw,42px);margin:0 0 14px;font-weight:800;letter-spacing:-.01em}
+  .page-hero p{font-size:16px;color:#3E4A46;margin:0;max-width:760px}
+  .badge{display:inline-block;font-size:11px;padding:3px 11px;border-radius:999px;background:#fff;border:1px solid var(--line);color:var(--accent);font-weight:700;letter-spacing:.06em;margin-bottom:12px}
+  .method{display:flex;flex-direction:column}
+  .method .src{margin-top:auto;padding-top:14px;font-size:12px;color:var(--muted);border-top:1px dashed var(--line)}
+  .list{list-style:none;padding:0;margin:0}
+  .list li{border-bottom:1px solid var(--line);padding:20px 0}
+  .list li:last-child{border-bottom:none}
+  .list h3{font-size:17px;margin:0 0 6px;font-weight:700}
+  .list p{font-size:14px;color:var(--muted);margin:0}
+  table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:14px}
+  th,td{padding:13px 16px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:var(--soft);font-weight:700}
+  tr:last-child td{border-bottom:none}
+  .notice{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:22px 26px;font-size:13px;color:var(--muted)}
+  .notice strong{color:var(--ink);font-size:14px}
+  .notice p{margin:8px 0 0}
+  .step{display:flex;gap:16px;margin-bottom:20px}
+  .step .n{flex:0 0 34px;height:34px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-size:14px;font-weight:700}
+  .step h3{margin:2px 0 4px;font-size:16px}
+  .step p{margin:0;font-size:14px;color:var(--muted)}
+  .sitemap{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:12px}
+  .sitemap a:hover{color:var(--accent)}
   @media(max-width:760px){
-    .nav{height:auto;padding:14px 0;gap:10px}
-    .links{gap:16px;font-size:13px}
+    .nav{padding:12px 0;gap:10px}
+    .links{gap:12px;font-size:13px}
     .hero{padding:56px 0 48px}
-    .grid3,.contact-grid{grid-template-columns:1fr}
+    .grid3,.grid2,.contact-grid{grid-template-columns:1fr}
     section{padding:52px 0}
+    .page-hero{padding:44px 0 36px}
+    table{font-size:13px}
+    th,td{padding:10px}
   }
 </style>
 </head>
@@ -75,10 +105,13 @@
   <div class="wrap nav">
     <a class="brand" href="/">云月峻岭<small>YUNYUE JUNLING</small></a>
     <nav class="links">
-      <a href="#about">关于我</a>
-      <a href="#services">我做什么</a>
-      <a href="#writing">文章</a>
-      <a href="#contact">怎么找到我</a>
+      <a href="/" class="on">首页</a>
+      <a href="/services/">服务与做法</a>
+      <a href="/questions/">常问问题</a>
+      <a href="/methods/">方法库</a>
+      <a href="/digital/">数字化</a>
+      <a href="/writing/">文章</a>
+      <a href="/about/">关于</a>
     </nav>
   </div>
 </header>
@@ -96,8 +129,8 @@
         <span class="tag">营销业绩提升教练</span>
       </div>
       <div class="btns">
-        <a class="cta" href="#services">看看我做什么 <span aria-hidden="true">→</span></a>
-        <a class="cta alt" href="/articles/">读文章归档</a>
+        <a class="cta" href="/services/">看看我做什么 <span aria-hidden="true">→</span></a>
+        <a class="cta alt" href="/methods/">翻方法库</a>
       </div>
     </div>
   </div>
@@ -108,6 +141,7 @@
       <h2>一句话介绍，就这一句</h2>
       <p class="sub">不堆头衔，说清楚我能帮谁解决什么。</p>
       <div class="quote">我是一名职场咨询顾问，也是企业管理数字化顾问、营销业绩提升教练。</div>
+      <a class="more" href="/about/">展开自我介绍与联系方式 →</a>
     </div>
   </section>
 
@@ -121,18 +155,49 @@
           <div class="num">01 / 个人</div>
           <h3>职场咨询顾问</h3>
           <p>为职场人做优势定位与转行转型教练。</p>
+          <a class="more" href="/questions/">看常被问到的问题 →</a>
         </div>
         <div class="card">
           <div class="num">02 / 组织</div>
           <h3>企业管理数字化顾问</h3>
           <p>服务科技、金融、消费领域的中小企业。</p>
+          <a class="more" href="/digital/">看数字化工具箱 →</a>
         </div>
         <div class="card">
           <div class="num">03 / 增长</div>
           <h3>营销业绩提升教练</h3>
           <p>专注商业模式与销售团队培养。</p>
+          <a class="more" href="/methods/">看销售方法框架 →</a>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section id="questions">
+    <div class="wrap">
+      <p class="kicker">常问问题</p>
+      <h2>来找我的人，多半卡在这几处</h2>
+      <p class="sub">按长期整理的高频问题归了类，不含任何来访者信息。</p>
+      <div class="grid3">
+        <div class="card"><div class="num">方向</div><h3>简历与面试</h3><p>简历怎么改、经历怎么讲、面完怎么复盘。</p></div>
+        <div class="card"><div class="num">选择</div><h3>转行与 Offer</h3><p>能不能转、往哪转、几个机会怎么比。</p></div>
+        <div class="card"><div class="num">节奏</div><h3>心态与长期</h3><p>没反馈时怎么调整，怎么把动作排下去。</p></div>
+      </div>
+      <a class="more" href="/questions/">五类高频问题全看 →</a>
+    </div>
+  </section>
+
+  <section id="methods">
+    <div class="wrap">
+      <p class="kicker">方法库</p>
+      <h2>把用得上的框架，摆到台面上</h2>
+      <p class="sub">不是秘诀，是能查、能对照、能改的顺序。每条都标了出处。</p>
+      <div class="grid3">
+        <div class="card"><div class="num">营销 / 01</div><h3>需求导向五环</h3><p>约访 → 接触 → 方案 → 异议 → 促成，先看信任与需求，再谈产品。</p></div>
+        <div class="card"><div class="num">营销 / 02</div><h3>异议处理五步</h3><p>倾听 → 认同 → 澄清 → 转换 → 促单，把「挑刺」当兴趣信号。</p></div>
+        <div class="card"><div class="num">数字化 / 01</div><h3>流程化思维</h3><p>把复杂任务拆成有序步骤、明确节点与规则，让结果可预测。</p></div>
+      </div>
+      <a class="more" href="/methods/">十条方法卡全看 →</a>
     </div>
   </section>
 
@@ -141,12 +206,13 @@
       <p class="kicker">文章</p>
       <h2>把做过的、想清楚的，慢慢写下来</h2>
       <p class="sub">公众号「大红帮帮您」和这里同步更新，想到哪写到哪。</p>
-      <a class="post" href="/articles/">
+      <a class="post" href="/articles/posts/2026-11-08-content-pipeline.html">
         <span class="date">2026-11-08</span>
         <h3>一个人做内容，先修一条流水线</h3>
         <p>很多人做内容卡在同一处：每周一打开文档，选题要重新想，资料要重新翻，上次那套好用的做法又忘在哪儿了。不是写得慢，是每次都从零开始。</p>
-        <span class="more">读全文 / 看全部文章 →</span>
+        <span class="more">读全文 →</span>
       </a>
+      <p class="note"><a href="/writing/">文章列表</a> · <a href="/articles/">早期文章归档</a></p>
     </div>
   </section>
 
@@ -164,6 +230,7 @@
     </div>
   </section>
 
+
   <section style="border-bottom:none">
     <div class="wrap">
       <div class="letter">
@@ -179,9 +246,20 @@
 </main>
 
 <footer>
-  <div class="wrap foot">
-    <span>© 2026 云月峻岭 · 由 GitHub Pages 托管</span>
-    <span><a href="/articles/">文章归档</a> · <a href="mailto:39764023@qq.com">读者来信</a> · 公众号「大红帮帮您」</span>
+  <div class="wrap">
+    <div class="sitemap">
+      <a href="/">首页</a>
+        <a href="/services/">服务与做法</a>
+        <a href="/questions/">常问问题</a>
+        <a href="/methods/">方法库</a>
+        <a href="/digital/">数字化</a>
+        <a href="/writing/">文章</a>
+        <a href="/about/">关于</a>
+    </div>
+    <div class="foot">
+      <span>© 2026 云月峻岭 · 由 GitHub Pages 托管</span>
+      <span><a href="/articles/">文章归档</a> · <a href="mailto:39764023@qq.com?subject=%E8%AF%BB%E8%80%85%E6%9D%A5%E4%BF%A1%20%C2%B7%20%E4%BA%91%E6%9C%88%E5%B3%BB%E5%B2%AD">读者来信</a> · 微信 yunlinyue · 公众号「大红帮帮您」</span>
+    </div>
   </div>
 </footer>
 

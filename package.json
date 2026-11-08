@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "rm -rf dist && mkdir -p dist && cp index.html dist/index.html && cp index.html dist/404.html && cp -r public/articles dist/articles && mkdir -p dist/chaiAI dist/about && cp public/chaiAI/index.html dist/chaiAI/index.html && cp public/about/index.html dist/about/index.html",
+    "build": "rm -rf dist && mkdir -p dist && cp index.html dist/index.html && cp index.html dist/404.html && cp -r public/articles dist/articles && cp -r public/services dist/services && cp -r public/questions dist/questions && cp -r public/methods dist/methods && cp -r public/digital dist/digital && cp -r public/writing dist/writing && mkdir -p dist/chaiAI dist/about && cp public/chaiAI/index.html dist/chaiAI/index.html && cp public/about/index.html dist/about/index.html",
     "lint": "eslint .",
     "preview": "vite preview"
   },
