@@ -6,8 +6,17 @@
 <title>云月峻岭 · 职场咨询 / 管理数字化 / 营销业绩提升</title>
 <meta name="description" content="云月峻岭整理的高频职场咨询问题分类：简历与面试、转行与方向、经历补充、Offer 选择、心态与节奏。">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231B2A28'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%23FAF8F3' font-family='sans-serif'%3E%E4%BA%91%3C/text%3E%3C/svg%3E">
+<link rel="preload" as="image" href="/assets/art-pages.jpg">
 <style>
-  :root{--ink:#1B2A28;--paper:#FAF8F3;--card:#FFFFFF;--accent:#B4653A;--line:#E5DFD4;--muted:#6B756F;--soft:#F1EDE4}
+  :root{--ink:#1B2A28;--paper:#FAF8F3;--card:#FFFFFF;--accent:#B4653A;--accent2:#C9903F;--tint:#F7EDE3;--line:#E5DFD4;--muted:#6B756F;--soft:#F1EDE4;--shadow:0 18px 44px rgba(27,42,40,.10)}
+  body[data-tone="services"]{--accent:#3C7668;--accent2:#74B3A1;--tint:#E9F2EE}
+  body[data-tone="questions"]{--accent:#3E6086;--accent2:#7E9FC4;--tint:#EAF0F7}
+  body[data-tone="methods"]{--accent:#77526E;--accent2:#B18AA6;--tint:#F2EAF1}
+  body[data-tone="leadership"]{--accent:#96692F;--accent2:#D0A85E;--tint:#F6EEDF}
+  body[data-tone="digital"]{--accent:#2E6D86;--accent2:#68A7BC;--tint:#E7F1F5}
+  body[data-tone="writing"]{--accent:#A5543B;--accent2:#D08B6B;--tint:#F7EBE4}
+  body[data-tone="about"]{--accent:#B4653A;--accent2:#C9903F;--tint:#F7EDE3}
+  body[data-tone="contact"]{--accent:#57703E;--accent2:#93B06A;--tint:#EEF3E6}
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
   body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased}
@@ -136,6 +145,112 @@
   .btn.ghost:hover{background:transparent;color:var(--accent);border-color:var(--accent)}
   .btn.ok{background:#3E6B52;border-color:#3E6B52;color:#fff}
   .mailnote{font-size:13px;color:var(--muted);margin:20px 0 0}
+
+  /* ================= 视觉升级：主题色块 / 动效 / 配图 ================= */
+  /* 入场动画只做位移、不碰 opacity：动画未播放或被禁用时内容始终可见可读 */
+  @keyframes riseIn{from{transform:translateY(16px)}to{transform:none}}
+  @keyframes floaty{0%,100%{transform:translate(0,0) rotate(0)}50%{transform:translate(10px,-14px) rotate(8deg)}}
+  @keyframes drift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+  @keyframes growX{from{transform:scaleX(.28)}to{transform:scaleX(1)}}
+  @keyframes spinSlow{to{transform:rotate(360deg)}}
+  @keyframes progressGrow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+  /* 顶部品牌色带 + 滚动进度 */
+  header::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent2),#3C7668,#3E6086,var(--accent));background-size:220% 100%;animation:drift 14s ease-in-out infinite}
+  .scroll-progress{position:fixed;top:0;left:0;height:3px;width:100%;z-index:30;transform:scaleX(0);transform-origin:0 50%;background:linear-gradient(90deg,var(--accent),var(--accent2));pointer-events:none}
+  @supports (animation-timeline: scroll()){
+    .scroll-progress{animation:progressGrow 1s linear both;animation-timeline:scroll(root block)}
+  }
+
+  /* 首屏渐变底色与漂浮几何 */
+  .hero{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--tint) 0%,var(--paper) 58%)}
+  .hero::before{content:"";position:absolute;width:430px;height:430px;border-radius:50%;right:-150px;top:-190px;background:radial-gradient(circle at 35% 35%,var(--accent2),transparent 68%);opacity:.20;animation:floaty 16s ease-in-out infinite;pointer-events:none}
+  .hero::after{content:"";position:absolute;width:170px;height:170px;border:1px dashed var(--accent);border-radius:50%;right:250px;bottom:-95px;opacity:.22;animation:spinSlow 42s linear infinite;pointer-events:none}
+  .hero-grid,.hero .wrap{position:relative;z-index:1}
+  .page-hero{position:relative;overflow:hidden;background:linear-gradient(120deg,var(--tint),var(--paper) 72%)}
+  .page-hero::before{content:"";position:absolute;width:340px;height:340px;border-radius:50%;right:-110px;top:-190px;background:radial-gradient(circle at 40% 40%,var(--accent2),transparent 70%);opacity:.18;animation:floaty 18s ease-in-out infinite reverse;pointer-events:none}
+  .page-hero .wrap{position:relative;z-index:1}
+
+  /* 交替色块：给长页面分段节奏 */
+  main > section:nth-of-type(even){background:linear-gradient(180deg,var(--tint) 0%,rgba(250,248,243,0) 100%)}
+
+  /* 标题前的渐变短色条 */
+  h2::before{content:"";display:block;width:34px;height:4px;border-radius:4px;background:linear-gradient(90deg,var(--accent),var(--accent2));margin-bottom:14px;transform-origin:0 50%;animation:growX .7s cubic-bezier(.2,.7,.2,1) both}
+
+  /* 卡片彩条 + 悬停上浮 */
+  .card,.method,.way,.contact-item{overflow:hidden}
+  .card,.method,.way,.stat,.contact-item,.post,.topic{transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s,border-color .35s}
+  .card:hover,.method:hover,.way:hover,.contact-item:hover,.stat:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--accent2)}
+  .card::before,.method::before,.way::before{content:"";position:absolute;left:0;top:0;height:3px;width:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));transform-origin:0 50%;animation:growX .8s cubic-bezier(.2,.7,.2,1) both}
+  .grid3 > .card:nth-child(2)::before,.contact-grid > .contact-item:nth-child(2)::before{background:linear-gradient(90deg,#3C7668,#74B3A1)}
+  .grid3 > .card:nth-child(3)::before{background:linear-gradient(90deg,#3E6086,#7E9FC4)}
+
+  /* 入场动画阶梯 */
+  .hero .eyebrow{animation:riseIn .65s .05s both}
+  .hero h1{animation:riseIn .7s .14s both}
+  .hero .lead{animation:riseIn .7s .24s both}
+  .hero .tags{animation:riseIn .7s .34s both}
+  .hero .btns{animation:riseIn .7s .44s both}
+  .portrait{animation:riseIn .8s .30s both}
+  .page-hero .wrap > *{animation:riseIn .7s both}
+  .page-hero .wrap > *:nth-child(2){animation-delay:.10s}
+  .page-hero .wrap > *:nth-child(3){animation-delay:.20s}
+  .page-hero .wrap > *:nth-child(4){animation-delay:.30s}
+  .grid3 > .card,.grid2 > .card,.contact-grid > .contact-item,.stats > .stat{animation:riseIn .65s both}
+  .grid3 > .card:nth-child(2),.contact-grid > .contact-item:nth-child(2),.stats > .stat:nth-child(2){animation-delay:.09s}
+  .grid3 > .card:nth-child(3),.contact-grid > .contact-item:nth-child(3),.stats > .stat:nth-child(3){animation-delay:.18s}
+  .stats > .stat:nth-child(4){animation-delay:.27s}
+
+  /* 多色标签与字段 */
+  .tag{transition:transform .25s,box-shadow .25s,background .25s}
+  .tag:nth-child(1){background:var(--tint);border-color:transparent;color:var(--accent);font-weight:700}
+  .tag:nth-child(2){background:#E9F2EE;border-color:transparent;color:#2F6357}
+  .tag:nth-child(3){background:#EAF0F7;border-color:transparent;color:#34537A}
+  .tag:hover{transform:translateY(-3px);box-shadow:0 8px 18px rgba(27,42,40,.10)}
+  .field{transition:transform .25s,box-shadow .25s,background .25s}
+  .field:nth-child(4n+2){background:#E9F2EE;border-color:transparent;color:#2F6357}
+  .field:nth-child(4n+3){background:#EAF0F7;border-color:transparent;color:#34537A}
+  .field:nth-child(4n+4){background:#F2EAF1;border-color:transparent;color:#6A4670}
+  .field:hover{transform:translateY(-3px);box-shadow:0 8px 18px rgba(27,42,40,.10)}
+  .field.link{background:var(--tint);border-color:var(--accent);color:var(--accent);font-weight:700}
+  .stat:nth-child(1) b{color:#B4653A}
+  .stat:nth-child(2) b{color:#3C7668}
+  .stat:nth-child(3) b{color:#3E6086}
+  .stat:nth-child(4) b{color:#96692F}
+
+  /* 导航下划线 / 按钮 / 链接微动效 */
+  .links a{position:relative;transition:color .25s}
+  .links a::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:2px;background:var(--accent);transform:scaleX(0);transform-origin:0 50%;transition:transform .28s}
+  .links a:hover::after,.links a.on::after{transform:scaleX(1)}
+  .cta,.btn{transition:transform .28s,background .28s,box-shadow .28s,border-color .28s}
+  .cta:hover,.btn:hover{transform:translateY(-3px);box-shadow:0 12px 24px rgba(27,42,40,.16)}
+  .more,.toc a,.sitemap a{transition:color .25s,letter-spacing .25s,transform .25s}
+  .more:hover{letter-spacing:.04em}
+  .toc a:hover{transform:translateY(-2px)}
+
+  /* 引文 / 深色来信块 / 页脚色带 */
+  .quote{background:linear-gradient(100deg,var(--tint),var(--soft));border-left:4px solid var(--accent)}
+  .letter{background:linear-gradient(115deg,var(--ink) 0%,#25413D 58%,var(--accent) 170%);position:relative;overflow:hidden}
+  .letter::after{content:"";position:absolute;width:270px;height:270px;border-radius:50%;right:-80px;top:-130px;background:radial-gradient(circle,var(--accent2),transparent 70%);opacity:.22;animation:floaty 18s ease-in-out infinite;pointer-events:none}
+  .letter > *{position:relative;z-index:1}
+  footer{position:relative}
+  footer::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent2),#3C7668,#3E6086);opacity:.5}
+  .portrait img,.visual img{transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+  .portrait:hover img{transform:scale(1.035)}
+
+  /* 配图横幅 */
+  .art-section{padding:46px 0 8px;border-bottom:none;background:transparent}
+  .visual{position:relative;margin:0;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 16px 40px rgba(27,42,40,.09);animation:riseIn .8s both}
+  .visual img{display:block;width:100%;height:clamp(210px,30vw,340px);object-fit:cover;object-position:center 52%}
+  .visual:hover img{transform:scale(1.05)}
+  .visual::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(27,42,40,.66) 0%,transparent 58%);pointer-events:none}
+  .visual .vtag{position:absolute;top:18px;left:18px;z-index:2;background:rgba(255,255,255,.94);color:var(--accent);font-size:12px;font-weight:700;letter-spacing:.06em;padding:6px 14px;border-radius:999px;box-shadow:0 4px 14px rgba(27,42,40,.12)}
+  .visual figcaption{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:26px 28px 20px;color:#fff;font-size:14px;font-weight:600;line-height:1.65}
+
+  @media(prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+    .scroll-progress{display:none}
+  }
   @media(max-width:760px){
     .nav{padding:12px 0;gap:10px}
     .links{gap:12px;font-size:13px}
@@ -148,10 +263,17 @@
     .page-hero{padding:44px 0 36px}
     table{font-size:13px}
     th,td{padding:10px}
+    .hero::after,.page-hero::before{display:none}
+    .hero::before{width:260px;height:260px;right:-120px;top:-140px}
+    .art-section{padding:32px 0 6px}
+    .visual img{height:200px}
+    .visual figcaption{font-size:13px;padding:20px 20px 16px}
+    .visual .vtag{top:12px;left:12px;font-size:11px}
   }
 </style>
 </head>
-<body>
+<body data-tone="questions">
+<div class="scroll-progress" aria-hidden="true"></div>
 
 <header>
   <div class="wrap nav">
@@ -180,6 +302,15 @@
     </div>
   </div>
 
+  <div class="art-section">
+    <div class="wrap">
+      <figure class="visual">
+        <img src="/assets/art-pages.jpg" alt="问题地图：把反复被问到的问题摊开写清楚，才看得见它们其实共用哪几个判断。" width="1280" height="773" decoding="async">
+        <span class="vtag">问题地图</span>
+        <figcaption>把反复被问到的问题摊开写清楚，才看得见它们其实共用哪几个判断。</figcaption>
+      </figure>
+    </div>
+  </div>
   <section>
     <div class="wrap">
       <ul class="list">
