@@ -1,4 +1,4 @@
-# 玄龙·拆AI（chaiAI）— 小蛮腰·拆AI 课程阵地
+# 云月峻岭
 
 > [chai.aibay.asia](https://chai.aibay.asia/) 的源码仓：拆书帮广州小蛮腰分舵「AI 拆书工作坊」的课程阵地——
 > 把 AI 软件和 AI 本身当成拆页对象，用拆书帮 RIA 方法论当场拆开、拆为己用。
