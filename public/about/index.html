@@ -50,6 +50,8 @@
   .contact-item .label{font-size:12px;color:var(--muted);letter-spacing:.1em;margin-bottom:8px}
   .contact-item .value{font-size:17px;font-weight:700;word-break:break-all}
   .note{font-size:13px;color:var(--muted);margin:22px 0 0}
+  .note a{color:var(--accent);font-weight:700}
+  .note a:hover{text-decoration:underline}
   .post{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px;transition:border-color .2s,transform .2s}
   .post:hover{border-color:var(--accent);transform:translateY(-2px)}
   .post .date{font-size:12px;color:var(--accent);letter-spacing:.1em}
@@ -122,6 +124,18 @@
   .topic:last-child{border-bottom:none}
   .topic h3{font-size:16px;margin:0 0 5px;font-weight:700}
   .topic p{font-size:14px;color:var(--muted);margin:0}
+  .topic h3 a:hover{color:var(--accent)}
+  .way{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px;display:flex;flex-direction:column}
+  .way .label{font-size:12px;color:var(--muted);letter-spacing:.12em;font-weight:700;margin:0 0 12px}
+  .way .value{font-size:20px;font-weight:800;word-break:break-all;line-height:1.4;margin:0 0 8px}
+  .way .hint{font-size:13px;color:var(--muted);margin:0 0 20px;min-height:44px}
+  .way .acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:auto}
+  .btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--ink);background:var(--ink);color:#fff;border-radius:9px;padding:9px 16px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit;line-height:1.6}
+  .btn:hover{background:var(--accent);border-color:var(--accent)}
+  .btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+  .btn.ghost:hover{background:transparent;color:var(--accent);border-color:var(--accent)}
+  .btn.ok{background:#3E6B52;border-color:#3E6B52;color:#fff}
+  .mailnote{font-size:13px;color:var(--muted);margin:20px 0 0}
   @media(max-width:760px){
     .nav{padding:12px 0;gap:10px}
     .links{gap:12px;font-size:13px}
@@ -151,6 +165,7 @@
       <a href="/digital/">数字化</a>
       <a href="/writing/">文章</a>
       <a href="/about/" class="on">关于</a>
+      <a href="/contact/">联系</a>
     </nav>
   </div>
 </header>
@@ -210,7 +225,7 @@
         <div class="contact-item"><div class="label">邮箱</div><div class="value">39764023@qq.com</div></div>
         <div class="contact-item"><div class="label">公众号</div><div class="value">大红帮帮您</div></div>
       </div>
-      <p class="note">微信、邮箱或公众号「大红帮帮您」都能找到我。</p>
+      <p class="note">微信、邮箱或公众号「大红帮帮您」都能找到我，也可以 <a href="/contact/">打开联系页 →</a> 看写信时适合带上哪些信息。</p>
     </div>
   </section>
 
@@ -229,7 +244,7 @@
           <h2>读者来信</h2>
           <p>读到有想法、想提问，或想聊聊职场与业务？写封信给我，我都看。</p>
         </div>
-        <a class="cta" href="mailto:39764023@qq.com?subject=%E8%AF%BB%E8%80%85%E6%9D%A5%E4%BF%A1%20%C2%B7%20%E4%BA%91%E6%9C%88%E5%B3%BB%E5%B2%AD">写信给我 ↗</a>
+        <a class="cta" href="/contact/">写信给我 →</a>
       </div>
     </div>
   </section>
@@ -247,10 +262,11 @@
         <a href="/digital/">数字化</a>
         <a href="/writing/">文章</a>
         <a href="/about/">关于</a>
+        <a href="/contact/">联系</a>
     </div>
     <div class="foot">
       <span>© 2026 杜淳滢 Jessie · 云月峻岭 · 由 GitHub Pages 托管</span>
-      <span><a href="/articles/">文章归档</a> · <a href="mailto:39764023@qq.com?subject=%E8%AF%BB%E8%80%85%E6%9D%A5%E4%BF%A1%20%C2%B7%20%E4%BA%91%E6%9C%88%E5%B3%BB%E5%B2%AD">读者来信</a> · 微信 yunlinyue · 公众号「大红帮帮您」</span>
+      <span><a href="/articles/">文章归档</a> · <a href="/contact/">读者来信</a> · 微信 yunlinyue · 公众号「大红帮帮您」</span>
     </div>
   </div>
 </footer>

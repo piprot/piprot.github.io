@@ -43,6 +43,8 @@
   .contact-item .label{font-size:12px;color:var(--muted);letter-spacing:.1em;margin-bottom:8px}
   .contact-item .value{font-size:17px;font-weight:700;word-break:break-all}
   .note{font-size:13px;color:var(--muted);margin:22px 0 0}
+  .note a{color:var(--accent);font-weight:700}
+  .note a:hover{text-decoration:underline}
   .post{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px;transition:border-color .2s,transform .2s}
   .post:hover{border-color:var(--accent);transform:translateY(-2px)}
   .post .date{font-size:12px;color:var(--accent);letter-spacing:.1em}
@@ -115,6 +117,18 @@
   .topic:last-child{border-bottom:none}
   .topic h3{font-size:16px;margin:0 0 5px;font-weight:700}
   .topic p{font-size:14px;color:var(--muted);margin:0}
+  .topic h3 a:hover{color:var(--accent)}
+  .way{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px;display:flex;flex-direction:column}
+  .way .label{font-size:12px;color:var(--muted);letter-spacing:.12em;font-weight:700;margin:0 0 12px}
+  .way .value{font-size:20px;font-weight:800;word-break:break-all;line-height:1.4;margin:0 0 8px}
+  .way .hint{font-size:13px;color:var(--muted);margin:0 0 20px;min-height:44px}
+  .way .acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:auto}
+  .btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--ink);background:var(--ink);color:#fff;border-radius:9px;padding:9px 16px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit;line-height:1.6}
+  .btn:hover{background:var(--accent);border-color:var(--accent)}
+  .btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+  .btn.ghost:hover{background:transparent;color:var(--accent);border-color:var(--accent)}
+  .btn.ok{background:#3E6B52;border-color:#3E6B52;color:#fff}
+  .mailnote{font-size:13px;color:var(--muted);margin:20px 0 0}
   @media(max-width:760px){
     .nav{padding:12px 0;gap:10px}
     .links{gap:12px;font-size:13px}
@@ -155,6 +169,8 @@
 .article ul{padding-left:22px;margin:0 0 18px}
 .article li{font-size:15.5px;color:#3E4A46;margin-bottom:7px}
 .article strong{color:var(--ink)}
+.article p a{color:var(--accent);font-weight:700}
+.article p a:hover{text-decoration:underline}
 .article blockquote{margin:18px 0;padding:14px 20px;border-left:3px solid var(--accent);background:var(--soft);border-radius:0 10px 10px 0}
 .article blockquote p{margin:0;font-size:16px;font-weight:600;color:var(--ink)}
 .article pre{background:var(--soft);padding:14px;border-radius:10px;overflow-x:auto;font-size:13.5px}
