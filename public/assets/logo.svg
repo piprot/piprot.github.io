@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="256" height="256" role="img" aria-label="云月峻岭"><rect x="2" y="2" width="60" height="60" rx="17" fill="none" stroke="#B4653A" stroke-width="2" opacity=".25"/>
+<path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z" transform="translate(29 7) scale(1.06)" fill="#C9903F" stroke="none"/>
+<path d="M12 19h14M16 24h12" fill="none" stroke="#B4653A" stroke-width="2.6" stroke-linecap="round" opacity=".5"/>
+<path d="M8 46 22 31l10 10 9-11 15 16" fill="none" stroke="#B4653A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity=".35"/>
+<path d="M8 51 21 38l9 8 10-11 16 16" fill="none" stroke="#B4653A" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10 53h44" fill="none" stroke="#B4653A" stroke-width="2" stroke-linecap="round" opacity=".4"/></svg>

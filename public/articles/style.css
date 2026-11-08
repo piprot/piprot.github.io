@@ -264,6 +264,45 @@
     .visual .vtag{top:12px;left:12px;font-size:11px}
   }
 
+  /* ================= VI · 云月峻岭品牌标识 ================= */
+  /* 只有一份 SVG 图形：currentColor 走频道主色、var(--accent2) 走辅助色，深底自动反白 */
+  .logo{display:block;width:36px;height:36px;color:var(--accent);flex:none}
+  .brand{display:inline-flex;align-items:center;gap:11px}
+  .brand .logo{width:38px;height:38px;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+  .brand:hover .logo{transform:rotate(-8deg) scale(1.06)}
+  .brand .btext{display:flex;flex-direction:column;line-height:1.25}
+  .brand small{font-size:10px;font-weight:500;letter-spacing:.22em;color:var(--muted);margin-top:2px}
+  .hero-watermark{position:absolute;right:5%;top:50%;transform:translateY(-50%);width:210px;height:210px;opacity:.10;pointer-events:none;z-index:0}
+  .hero-watermark .logo{width:100%;height:100%}
+  .sec-mark{display:inline-block;width:23px;height:23px;margin-right:10px;vertical-align:-4px}
+  .sec-mark .logo{width:100%;height:100%}
+  .letter .sec-mark,.letter .sec-mark .logo{color:#F3EFE7}
+  .visual .vtag{display:inline-flex;align-items:center;gap:7px}
+  .vtag .logo{width:16px;height:16px}
+  .foot-brand{display:flex;align-items:center;gap:13px;margin-bottom:24px}
+  .foot-brand .logo{width:46px;height:46px}
+  .foot-brand .fb-text{display:flex;flex-direction:column;gap:2px}
+  .foot-brand .fb-text b{font-size:16px;color:var(--ink);letter-spacing:.08em}
+  .foot-brand .fb-text span{font-size:11.5px;color:var(--muted);letter-spacing:.04em}
+
+  /* 案例 · 客户视角四段式 */
+  .case-grid{align-items:start}
+  .case-card{display:flex;flex-direction:column}
+  .case-flow{margin:18px 0 0;display:grid;gap:11px}
+  .case-row{display:grid;grid-template-columns:86px minmax(0,1fr);gap:12px;align-items:start}
+  .case-row dt{font-size:12px;font-weight:700;letter-spacing:.04em;color:var(--muted);padding-top:2px;white-space:nowrap}
+  .case-row dd{margin:0;font-size:13.5px;color:#3E4A46;line-height:1.72}
+  .case-row.win{background:var(--tint);border-left:3px solid var(--accent);border-radius:0 9px 9px 0;padding:12px 14px;margin:3px -2px 0}
+  .case-row.win dt{color:var(--accent)}
+  .case-row.win dd{color:var(--ink);font-weight:600}
+  @media(max-width:760px){
+    .hero-watermark{width:130px;height:130px;right:-16px;opacity:.08}
+    .foot-brand .logo{width:40px;height:40px}
+    .case-row,.case-row.win{grid-template-columns:1fr;gap:3px}
+    .case-row dt{padding-top:0}
+    .sec-mark{width:20px;height:20px;margin-right:8px}
+  }
+
 /* ---- 文章频道：沿用主站组件，仅补阅读版式 ---- */
 .article-page{max-width:900px}
 .post-list{display:grid;gap:16px;margin-top:8px}
