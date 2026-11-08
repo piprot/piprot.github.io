@@ -86,10 +86,31 @@
   .step p{margin:0;font-size:14px;color:var(--muted)}
   .sitemap{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:12px}
   .sitemap a:hover{color:var(--accent)}
+  .hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:56px;align-items:center}
+  .portrait{margin:0;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:10px;box-shadow:0 20px 46px rgba(27,42,40,.11)}
+  .portrait img{display:block;width:100%;height:auto;border-radius:10px;background:#fff}
+  .portrait .cap{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;padding:14px 8px 6px}
+  .portrait .cap b{font-size:16px;font-weight:800}
+  .portrait .cap span{font-size:12px;color:var(--muted)}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:28px 0}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 18px}
+  .stat b{display:block;font-size:25px;font-weight:800;color:var(--accent);letter-spacing:-.02em;line-height:1.3}
+  .stat span{display:block;font-size:13px;color:var(--muted);margin-top:6px}
+  .fields{display:flex;flex-wrap:wrap;gap:9px;margin-top:14px}
+  .field{font-size:13px;padding:8px 14px;border:1px solid var(--line);border-radius:8px;background:var(--soft)}
+  .field-label{font-size:12px;letter-spacing:.16em;color:var(--muted);font-weight:700;margin:26px 0 0}
+  .profile-grid{display:grid;grid-template-columns:270px minmax(0,1fr);gap:40px;align-items:start}
+  .profile-grid .stats{grid-template-columns:repeat(2,1fr)}
+  .profile-grid .who{font-size:20px;font-weight:800;margin:0 0 10px}
+  .profile-grid .role{font-size:15px;color:#3E4A46;margin:0 0 8px}
+  .profile-grid .base{font-size:13px;color:var(--accent);font-weight:700;margin:0}
   @media(max-width:760px){
     .nav{padding:12px 0;gap:10px}
     .links{gap:12px;font-size:13px}
     .hero{padding:56px 0 48px}
+    .hero-grid,.profile-grid{grid-template-columns:1fr;gap:30px}
+    .portrait{max-width:300px;margin:0 auto}
+    .stats,.profile-grid .stats{grid-template-columns:repeat(2,1fr)}
     .grid3,.grid2,.contact-grid{grid-template-columns:1fr}
     section{padding:52px 0}
     .page-hero{padding:44px 0 36px}
@@ -181,7 +202,7 @@
   <section class="tight"><div class="wrap">
 <div class="notice">
   <strong>关于本站资料</strong>
-  <p>方法卡片与工具清单整理自我长期维护的知识库：一部分是公开课程笔记的脱敏提炼，一部分是第三方公开资料的要点摘要。本站只做要点整理与索引，不转载原文；不含客户信息、聊天记录、内部数据与任何未核实的案例或成果数字。如涉及原作者权益，欢迎来信调整或撤下。</p>
+  <p>方法卡片与工具清单整理自我长期维护的知识库：一部分是公开课程笔记的脱敏提炼，一部分是第三方公开资料的要点摘要。本站只做要点整理与索引，不转载原文；不含客户信息、聊天记录、内部数据与任何未核实的第三方案例数据；个人履历数字由站长本人提供。如涉及原作者权益，欢迎来信调整或撤下。</p>
 </div>
 </div></section>
 
@@ -212,7 +233,7 @@
         <a href="/about/">关于</a>
     </div>
     <div class="foot">
-      <span>© 2026 云月峻岭 · 由 GitHub Pages 托管</span>
+      <span>© 2026 杜淳滢 Jessie · 云月峻岭 · 由 GitHub Pages 托管</span>
       <span><a href="/articles/">文章归档</a> · <a href="mailto:39764023@qq.com?subject=%E8%AF%BB%E8%80%85%E6%9D%A5%E4%BF%A1%20%C2%B7%20%E4%BA%91%E6%9C%88%E5%B3%BB%E5%B2%AD">读者来信</a> · 微信 yunlinyue · 公众号「大红帮帮您」</span>
     </div>
   </div>

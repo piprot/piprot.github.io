@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>云月峻岭 · 职场咨询 / 管理数字化 / 营销业绩提升</title>
-<meta name="description" content="云月峻岭：职场咨询顾问、企业管理数字化顾问、营销业绩提升教练。为职场人做优势定位与转行转型，服务科技、金融、消费领域的中小企业，专注商业模式与销售团队培养。微信 yunlinyue，公众号「大红帮帮您」。">
+<meta name="description" content="杜淳滢 Jessie（云月峻岭）：个人职场教练、企业管理数字化顾问、营销业绩提升教练，常驻上海︱宁波。15年+央企HR经理＆总助、12年+外企销售团队＆区域负责人、30+企业商业全案咨询、600+个人职场咨询服务。微信 yunlinyue，公众号「大红帮帮您」。">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231B2A28'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%23FAF8F3' font-family='sans-serif'%3E%E4%BA%91%3C/text%3E%3C/svg%3E">
 <style>
   :root{--ink:#1B2A28;--paper:#FAF8F3;--card:#FFFFFF;--accent:#B4653A;--line:#E5DFD4;--muted:#6B756F;--soft:#F1EDE4}
@@ -86,10 +86,31 @@
   .step p{margin:0;font-size:14px;color:var(--muted)}
   .sitemap{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:12px}
   .sitemap a:hover{color:var(--accent)}
+  .hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:56px;align-items:center}
+  .portrait{margin:0;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:10px;box-shadow:0 20px 46px rgba(27,42,40,.11)}
+  .portrait img{display:block;width:100%;height:auto;border-radius:10px;background:#fff}
+  .portrait .cap{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;padding:14px 8px 6px}
+  .portrait .cap b{font-size:16px;font-weight:800}
+  .portrait .cap span{font-size:12px;color:var(--muted)}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:28px 0}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 18px}
+  .stat b{display:block;font-size:25px;font-weight:800;color:var(--accent);letter-spacing:-.02em;line-height:1.3}
+  .stat span{display:block;font-size:13px;color:var(--muted);margin-top:6px}
+  .fields{display:flex;flex-wrap:wrap;gap:9px;margin-top:14px}
+  .field{font-size:13px;padding:8px 14px;border:1px solid var(--line);border-radius:8px;background:var(--soft)}
+  .field-label{font-size:12px;letter-spacing:.16em;color:var(--muted);font-weight:700;margin:26px 0 0}
+  .profile-grid{display:grid;grid-template-columns:270px minmax(0,1fr);gap:40px;align-items:start}
+  .profile-grid .stats{grid-template-columns:repeat(2,1fr)}
+  .profile-grid .who{font-size:20px;font-weight:800;margin:0 0 10px}
+  .profile-grid .role{font-size:15px;color:#3E4A46;margin:0 0 8px}
+  .profile-grid .base{font-size:13px;color:var(--accent);font-weight:700;margin:0}
   @media(max-width:760px){
     .nav{padding:12px 0;gap:10px}
     .links{gap:12px;font-size:13px}
     .hero{padding:56px 0 48px}
+    .hero-grid,.profile-grid{grid-template-columns:1fr;gap:30px}
+    .portrait{max-width:300px;margin:0 auto}
+    .stats,.profile-grid .stats{grid-template-columns:repeat(2,1fr)}
     .grid3,.grid2,.contact-grid{grid-template-columns:1fr}
     section{padding:52px 0}
     .page-hero{padding:44px 0 36px}
@@ -118,29 +139,37 @@
 <main>
 
   <div class="hero" id="top">
-    <div class="wrap">
-      <p class="eyebrow">云月峻岭 · 咨询与教练</p>
-      <h1>职场咨询 · 管理数字化<br><em>· 营销业绩提升</em></h1>
-      <p class="lead">我是一名职场咨询顾问，也是企业管理数字化顾问、营销业绩提升教练。三件事看起来不搭，其实都指向同一处：把模糊的问题拆清楚，再陪你把它落到动作上。</p>
-      <div class="tags">
-        <span class="tag">职场咨询顾问</span>
-        <span class="tag">企业管理数字化顾问</span>
-        <span class="tag">营销业绩提升教练</span>
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">云月峻岭 · 咨询与教练</p>
+        <h1>职场咨询 · 管理数字化<br><em>· 营销业绩提升</em></h1>
+        <p class="lead">杜淳滢 Jessie，个人职场教练、企业管理数字化顾问、营销业绩提升教练，常驻上海︱宁波。三件事看起来不搭，其实都指向同一处：把模糊的问题拆清楚，再陪你把它落到动作上。</p>
+        <div class="tags">
+          <span class="tag">职场咨询顾问</span>
+          <span class="tag">企业管理数字化顾问</span>
+          <span class="tag">营销业绩提升教练</span>
+        </div>
+        <div class="btns">
+          <a class="cta" href="/services/">看看我做什么 <span aria-hidden="true">→</span></a>
+          <a class="cta alt" href="/about/">个人简介与联系</a>
+        </div>
       </div>
-      <div class="btns">
-        <a class="cta" href="/services/">看看我做什么 <span aria-hidden="true">→</span></a>
-        <a class="cta alt" href="/methods/">翻方法库</a>
-      </div>
+      <figure class="portrait">
+  <img src="/assets/jessie.jpg" alt="杜淳滢 Jessie 本人形象照" width="1287" height="1920">
+  <figcaption class="cap"><b>杜淳滢 Jessie</b><span>常驻地：上海︱宁波</span></figcaption>
+</figure>
     </div>
   </div>
 
   <section id="about">
     <div class="wrap">
       <p class="kicker">① 我是谁</p>
-      <h2>一句话介绍，就这一句</h2>
-      <p class="sub">不堆头衔，说清楚我能帮谁解决什么。</p>
-      <div class="quote">我是一名职场咨询顾问，也是企业管理数字化顾问、营销业绩提升教练。</div>
-      <a class="more" href="/about/">展开自我介绍与联系方式 →</a>
+      <h2>个人简介</h2>
+      <p class="sub">杜淳滢 Jessie · 常驻上海︱宁波。履历与业务领域如下。</p>
+      <div class="stats"><div class="stat"><b>15年+</b><span>央企HR经理＆总助</span></div><div class="stat"><b>12年+</b><span>外企销售团队＆区域负责人</span></div><div class="stat"><b>30+</b><span>企业商业全案咨询</span></div><div class="stat"><b>600+</b><span>个人职场咨询服务</span></div></div>
+      <p class="field-label">业务领域</p>
+      <div class="fields"><span class="field">营销转职</span><span class="field">面试提薪</span><span class="field">组织架构</span><span class="field">流程再造</span><span class="field">天赋能量</span><span class="field">事业抉择</span><span class="field">人才测评</span><span class="field">商业运营</span><span class="field">OPC起盘</span><span class="field">理财咨询</span><span class="field">升维领导力</span><span class="field">管理咨询</span><span class="field">兼职猎头</span><span class="field">大厂内推</span><span class="field">申硕申博</span><span class="field">留学移民</span></div>
+      <a class="more" href="/about/">展开完整简介与联系方式 →</a>
     </div>
   </section>
 
@@ -256,7 +285,7 @@
         <a href="/about/">关于</a>
     </div>
     <div class="foot">
-      <span>© 2026 云月峻岭 · 由 GitHub Pages 托管</span>
+      <span>© 2026 杜淳滢 Jessie · 云月峻岭 · 由 GitHub Pages 托管</span>
       <span><a href="/articles/">文章归档</a> · <a href="mailto:39764023@qq.com?subject=%E8%AF%BB%E8%80%85%E6%9D%A5%E4%BF%A1%20%C2%B7%20%E4%BA%91%E6%9C%88%E5%B3%BB%E5%B2%AD">读者来信</a> · 微信 yunlinyue · 公众号「大红帮帮您」</span>
     </div>
   </div>
