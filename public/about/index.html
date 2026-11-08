@@ -17,7 +17,7 @@
   .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:66px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
   .brand{font-size:19px;font-weight:800;letter-spacing:.06em}
   .brand small{display:block;font-size:10px;font-weight:500;letter-spacing:.22em;color:var(--muted);margin-top:-2px}
-  .links{display:flex;gap:20px;font-size:13.5px;color:var(--muted);flex-wrap:wrap}
+  .links{display:flex;gap:15px;font-size:13.5px;color:var(--muted);flex-wrap:wrap}
   .links a:hover,.links a.on{color:var(--accent)}
   .links a.on{font-weight:700}
   .hero{padding:88px 0 72px;border-bottom:1px solid var(--line)}
@@ -104,6 +104,24 @@
   .profile-grid .who{font-size:20px;font-weight:800;margin:0 0 10px}
   .profile-grid .role{font-size:15px;color:#3E4A46;margin:0 0 8px}
   .profile-grid .base{font-size:13px;color:var(--accent);font-weight:700;margin:0}
+  .toc{display:flex;gap:9px;flex-wrap:wrap;margin:26px 0 0}
+  .toc a{font-size:12.5px;padding:6px 13px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--muted)}
+  .toc a:hover{border-color:var(--accent);color:var(--accent)}
+  .field.link{border-color:var(--accent);color:var(--accent);font-weight:700}
+  .pillar{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:30px 0 6px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+  .pillar b{font-size:18px;font-weight:800}
+  .pillar span{font-size:13px;color:var(--muted)}
+  .cap{padding:15px 0;border-bottom:1px solid var(--line)}
+  .cap:last-child{border-bottom:none}
+  .cap .h{font-size:15px;font-weight:700;margin:0 0 4px}
+  .cap .h span{font-size:11px;color:var(--accent);letter-spacing:.1em;margin-left:8px;font-weight:700}
+  .cap .d{font-size:13.5px;color:#3E4A46;margin:0 0 5px}
+  .cap .a{font-size:13px;color:var(--muted);margin:0}
+  .cap .a b{color:var(--ink)}
+  .topic{border-bottom:1px solid var(--line);padding:17px 0}
+  .topic:last-child{border-bottom:none}
+  .topic h3{font-size:16px;margin:0 0 5px;font-weight:700}
+  .topic p{font-size:14px;color:var(--muted);margin:0}
   @media(max-width:760px){
     .nav{padding:12px 0;gap:10px}
     .links{gap:12px;font-size:13px}
@@ -129,6 +147,7 @@
       <a href="/services/">服务与做法</a>
       <a href="/questions/">常问问题</a>
       <a href="/methods/">方法库</a>
+      <a href="/leadership/">升维领导力</a>
       <a href="/digital/">数字化</a>
       <a href="/writing/">文章</a>
       <a href="/about/" class="on">关于</a>
@@ -161,7 +180,7 @@
           <p class="base">常驻地：上海︱宁波</p>
           <div class="stats"><div class="stat"><b>15年+</b><span>央企HR经理＆总助</span></div><div class="stat"><b>12年+</b><span>外企销售团队＆区域负责人</span></div><div class="stat"><b>30+</b><span>企业商业全案咨询</span></div><div class="stat"><b>600+</b><span>个人职场咨询服务</span></div></div>
           <p class="field-label">业务领域</p>
-          <div class="fields"><span class="field">营销转职</span><span class="field">面试提薪</span><span class="field">组织架构</span><span class="field">流程再造</span><span class="field">天赋能量</span><span class="field">事业抉择</span><span class="field">人才测评</span><span class="field">商业运营</span><span class="field">OPC起盘</span><span class="field">理财咨询</span><span class="field">升维领导力</span><span class="field">管理咨询</span><span class="field">兼职猎头</span><span class="field">大厂内推</span><span class="field">申硕申博</span><span class="field">留学移民</span></div>
+          <div class="fields"><span class="field">营销转职</span><span class="field">面试提薪</span><span class="field">组织架构</span><span class="field">流程再造</span><span class="field">天赋能量</span><span class="field">事业抉择</span><span class="field">人才测评</span><span class="field">商业运营</span><span class="field">OPC起盘</span><span class="field">理财咨询</span><a class="field link" href="/leadership/">升维领导力 ↗</a><span class="field">管理咨询</span><span class="field">兼职猎头</span><span class="field">大厂内推</span><span class="field">申硕申博</span><span class="field">留学移民</span></div>
         </div>
       </div>
     </div>
@@ -177,6 +196,7 @@
         <div class="card"><div class="num">03 / 增长</div><h3>营销业绩提升教练</h3><p>专注商业模式与销售团队培养。</p><a class="more" href="/methods/">方法库 →</a></div>
       </div>
       <a class="more" href="/services/">看每条线的具体做法 →</a>
+      <a class="more" href="/leadership/" style="margin-left:18px">专题：升维领导力 →</a>
     </div>
   </section>
 
@@ -197,7 +217,7 @@
   <section class="tight"><div class="wrap">
 <div class="notice">
   <strong>关于本站资料</strong>
-  <p>方法卡片与工具清单整理自我长期维护的知识库：一部分是公开课程笔记的脱敏提炼，一部分是第三方公开资料的要点摘要。本站只做要点整理与索引，不转载原文；不含客户信息、聊天记录、内部数据与任何未核实的第三方案例数据；个人履历数字由站长本人提供。如涉及原作者权益，欢迎来信调整或撤下。</p>
+  <p>方法卡片与工具清单整理自我长期维护的知识库与自建方法体系：一部分是公开课程笔记的脱敏提炼，一部分是第三方公开资料的要点摘要，另一部分是本人设计的训练框架。本站只做要点整理与索引，不转载原文；不含客户信息、聊天记录、内部数据与任何未核实的第三方案例数据；个人履历数字由站长本人提供。如涉及原作者权益，欢迎来信调整或撤下。</p>
 </div>
 </div></section>
 
@@ -223,6 +243,7 @@
         <a href="/services/">服务与做法</a>
         <a href="/questions/">常问问题</a>
         <a href="/methods/">方法库</a>
+        <a href="/leadership/">升维领导力</a>
         <a href="/digital/">数字化</a>
         <a href="/writing/">文章</a>
         <a href="/about/">关于</a>

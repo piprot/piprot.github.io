@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>云月峻岭 · 职场咨询 / 管理数字化 / 营销业绩提升</title>
+<meta name="description" content="云月峻岭升维领导力专题：从事件层、流程层到系统层的三层视角，技术性问题与适应性挑战的区分，十项能力图谱、九章情境阶梯、测学练辅升五步训练闭环，以及三类人群的练法与服务落地方式。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231B2A28'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%23FAF8F3' font-family='sans-serif'%3E%E4%BA%91%3C/text%3E%3C/svg%3E">
+<style>
+  :root{--ink:#1B2A28;--paper:#FAF8F3;--card:#FFFFFF;--accent:#B4653A;--line:#E5DFD4;--muted:#6B756F;--soft:#F1EDE4}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+  header{position:sticky;top:0;z-index:10;background:rgba(250,248,243,.94);border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:66px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
+  .brand{font-size:19px;font-weight:800;letter-spacing:.06em}
+  .brand small{display:block;font-size:10px;font-weight:500;letter-spacing:.22em;color:var(--muted);margin-top:-2px}
+  .links{display:flex;gap:15px;font-size:13.5px;color:var(--muted);flex-wrap:wrap}
+  .links a:hover,.links a.on{color:var(--accent)}
+  .links a.on{font-weight:700}
+  .hero{padding:88px 0 72px;border-bottom:1px solid var(--line)}
+  .eyebrow{font-size:12px;letter-spacing:.24em;color:var(--accent);font-weight:700;margin:0 0 20px}
+  .hero h1{font-size:clamp(32px,5.4vw,56px);line-height:1.3;margin:0 0 24px;font-weight:800;letter-spacing:-.02em}
+  .hero h1 em{font-style:normal;color:var(--accent)}
+  .lead{font-size:17px;color:#3E4A46;max-width:660px;margin:0 0 32px}
+  .tags{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:36px}
+  .tag{font-size:13px;padding:7px 16px;border:1px solid var(--line);border-radius:999px;background:var(--card)}
+  .cta{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:#fff;padding:13px 26px;border-radius:10px;font-size:14px;font-weight:600}
+  .cta:hover{background:var(--accent)}
+  .cta.alt{background:transparent;color:var(--ink);border:1px solid var(--line)}
+  .cta.alt:hover{border-color:var(--accent);color:var(--accent);background:transparent}
+  .btns{display:flex;gap:12px;flex-wrap:wrap}
+  section{padding:72px 0;border-bottom:1px solid var(--line)}
+  section.tight{padding:52px 0}
+  .kicker{font-size:12px;letter-spacing:.2em;color:var(--accent);font-weight:700;margin:0 0 10px}
+  h2{font-size:clamp(24px,3.4vw,34px);margin:0 0 14px;font-weight:800;letter-spacing:-.01em}
+  .sub{color:var(--muted);font-size:15px;margin:0 0 36px;max-width:720px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  .card,.method{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px}
+  .card .num,.method .num{font-size:12px;color:var(--accent);font-weight:700;letter-spacing:.14em;margin-bottom:14px}
+  .card h3,.method h3{font-size:17px;margin:0 0 10px;font-weight:700}
+  .card p,.method p{font-size:14px;color:var(--muted);margin:0}
+  .card a.more,.more{display:inline-block;margin-top:14px;font-size:13px;font-weight:700;color:var(--accent)}
+  .quote{background:var(--soft);border-left:3px solid var(--accent);padding:22px 26px;border-radius:0 10px 10px 0;font-size:17px;font-weight:600;max-width:760px}
+  .contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .contact-item{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
+  .contact-item .label{font-size:12px;color:var(--muted);letter-spacing:.1em;margin-bottom:8px}
+  .contact-item .value{font-size:17px;font-weight:700;word-break:break-all}
+  .note{font-size:13px;color:var(--muted);margin:22px 0 0}
+  .post{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px;transition:border-color .2s,transform .2s}
+  .post:hover{border-color:var(--accent);transform:translateY(-2px)}
+  .post .date{font-size:12px;color:var(--accent);letter-spacing:.1em}
+  .post h3{font-size:20px;margin:10px 0 10px}
+  .post p{font-size:14px;color:var(--muted);margin:0 0 14px}
+  .letter{background:var(--ink);color:#F3EFE7;border-radius:16px;padding:38px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+  .letter h2{color:#fff;margin:0 0 8px;font-size:24px}
+  .letter p{color:#BFC9C4;font-size:14px;margin:0}
+  .letter .cta{background:#fff;color:var(--ink)}
+  .letter .cta:hover{background:var(--accent);color:#fff}
+  footer{padding:40px 0 56px;font-size:13px;color:var(--muted)}
+  .foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .foot a:hover{color:var(--accent)}
+  .page-hero{padding:62px 0 50px;border-bottom:1px solid var(--line);background:var(--soft)}
+  .page-hero h1{font-size:clamp(28px,4.2vw,42px);margin:0 0 14px;font-weight:800;letter-spacing:-.01em}
+  .page-hero p{font-size:16px;color:#3E4A46;margin:0;max-width:760px}
+  .badge{display:inline-block;font-size:11px;padding:3px 11px;border-radius:999px;background:#fff;border:1px solid var(--line);color:var(--accent);font-weight:700;letter-spacing:.06em;margin-bottom:12px}
+  .method{display:flex;flex-direction:column}
+  .list{list-style:none;padding:0;margin:0}
+  .list li{border-bottom:1px solid var(--line);padding:20px 0}
+  .list li:last-child{border-bottom:none}
+  .list h3{font-size:17px;margin:0 0 6px;font-weight:700}
+  .list p{font-size:14px;color:var(--muted);margin:0}
+  table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:14px}
+  th,td{padding:13px 16px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:var(--soft);font-weight:700}
+  tr:last-child td{border-bottom:none}
+  .notice{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:22px 26px;font-size:13px;color:var(--muted)}
+  .notice strong{color:var(--ink);font-size:14px}
+  .notice p{margin:8px 0 0}
+  .step{display:flex;gap:16px;margin-bottom:20px}
+  .step .n{flex:0 0 34px;height:34px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-size:14px;font-weight:700}
+  .step h3{margin:2px 0 4px;font-size:16px}
+  .step p{margin:0;font-size:14px;color:var(--muted)}
+  .sitemap{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:12px}
+  .sitemap a:hover{color:var(--accent)}
+  .hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:56px;align-items:center}
+  .portrait{margin:0;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:10px;box-shadow:0 20px 46px rgba(27,42,40,.11)}
+  .portrait img{display:block;width:100%;height:auto;border-radius:10px;background:#fff}
+  .portrait .cap{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;padding:14px 8px 6px}
+  .portrait .cap b{font-size:16px;font-weight:800}
+  .portrait .cap span{font-size:12px;color:var(--muted)}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:28px 0}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 18px}
+  .stat b{display:block;font-size:25px;font-weight:800;color:var(--accent);letter-spacing:-.02em;line-height:1.3}
+  .stat span{display:block;font-size:13px;color:var(--muted);margin-top:6px}
+  .fields{display:flex;flex-wrap:wrap;gap:9px;margin-top:14px}
+  .field{font-size:13px;padding:8px 14px;border:1px solid var(--line);border-radius:8px;background:var(--soft)}
+  .field-label{font-size:12px;letter-spacing:.16em;color:var(--muted);font-weight:700;margin:26px 0 0}
+  .profile-grid{display:grid;grid-template-columns:270px minmax(0,1fr);gap:40px;align-items:start}
+  .profile-grid .stats{grid-template-columns:repeat(2,1fr)}
+  .profile-grid .who{font-size:20px;font-weight:800;margin:0 0 10px}
+  .profile-grid .role{font-size:15px;color:#3E4A46;margin:0 0 8px}
+  .profile-grid .base{font-size:13px;color:var(--accent);font-weight:700;margin:0}
+  .toc{display:flex;gap:9px;flex-wrap:wrap;margin:26px 0 0}
+  .toc a{font-size:12.5px;padding:6px 13px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--muted)}
+  .toc a:hover{border-color:var(--accent);color:var(--accent)}
+  .field.link{border-color:var(--accent);color:var(--accent);font-weight:700}
+  .pillar{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:30px 0 6px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+  .pillar b{font-size:18px;font-weight:800}
+  .pillar span{font-size:13px;color:var(--muted)}
+  .cap{padding:15px 0;border-bottom:1px solid var(--line)}
+  .cap:last-child{border-bottom:none}
+  .cap .h{font-size:15px;font-weight:700;margin:0 0 4px}
+  .cap .h span{font-size:11px;color:var(--accent);letter-spacing:.1em;margin-left:8px;font-weight:700}
+  .cap .d{font-size:13.5px;color:#3E4A46;margin:0 0 5px}
+  .cap .a{font-size:13px;color:var(--muted);margin:0}
+  .cap .a b{color:var(--ink)}
+  .topic{border-bottom:1px solid var(--line);padding:17px 0}
+  .topic:last-child{border-bottom:none}
+  .topic h3{font-size:16px;margin:0 0 5px;font-weight:700}
+  .topic p{font-size:14px;color:var(--muted);margin:0}
+  @media(max-width:760px){
+    .nav{padding:12px 0;gap:10px}
+    .links{gap:12px;font-size:13px}
+    .hero{padding:56px 0 48px}
+    .hero-grid,.profile-grid{grid-template-columns:1fr;gap:30px}
+    .portrait{max-width:300px;margin:0 auto}
+    .stats,.profile-grid .stats{grid-template-columns:repeat(2,1fr)}
+    .grid3,.grid2,.contact-grid{grid-template-columns:1fr}
+    section{padding:52px 0}
+    .page-hero{padding:44px 0 36px}
+    table{font-size:13px}
+    th,td{padding:10px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/">云月峻岭<small>YUNYUE JUNLING</small></a>
+    <nav class="links">
+      <a href="/">首页</a>
+      <a href="/services/">服务与做法</a>
+      <a href="/questions/">常问问题</a>
+      <a href="/methods/">方法库</a>
+      <a href="/leadership/" class="on">升维领导力</a>
+      <a href="/digital/">数字化</a>
+      <a href="/writing/">文章</a>
+      <a href="/about/">关于</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="page-hero">
+    <div class="wrap">
+      <span class="badge">专题 · 方法与服务</span>
+      <h1>升维领导力</h1>
+      <p>同一件事卡住你，往往不是做得不够用力，而是看它的层级不对。这一页把「从解决问题，到重新定义问题」拆成能判断、能练习、能迁移的一套做法：先分清问题类型，再选能力，再进情境里落子，最后把判断沉淀成自己的方法。</p>
+      <div class="stats">
+        <div class="stat"><b>3 层</b><span>看问题的视角</span></div>
+        <div class="stat"><b>10 项</b><span>可练的能力</span></div>
+        <div class="stat"><b>9 章</b><span>递进的情境</span></div>
+        <div class="stat"><b>5 步</b><span>一次训练闭环</span></div>
+      </div>
+      <div class="toc">
+        <a href="#s1">01 什么叫升维</a>
+        <a href="#s2">02 两类问题</a>
+        <a href="#s3">03 能力图谱</a>
+        <a href="#s4">04 九章情境</a>
+        <a href="#s5">05 训练闭环</a>
+        <a href="#s6">06 三类人</a>
+        <a href="#s7">07 常见议题</a>
+        <a href="#s8">08 怎么落地</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="s1">
+    <div class="wrap">
+      <p class="kicker">01 / 概念</p>
+      <h2>升维，不是多加一招，是换一层站位</h2>
+      <p class="sub">很多管理困境之所以反复出现，是因为每一轮都在同一层里找更快的解法。层级不动，动作再标准也只是把同一个问题做得更熟练。</p>
+      <table>
+        <tr><th style="width:15%">层级</th><th style="width:28%">注意力放在哪</th><th style="width:29%">典型问法</th><th>常见结果</th></tr>
+        <tr><td><b>事件层</b></td><td>这一次发生了什么</td><td>谁负责、怎么补救、今晚能不能先按住</td><td>火灭了，同类问题下个月再来一次</td></tr>
+        <tr><td><b>流程层</b></td><td>这类事平时怎么流转</td><td>哪个节点漏了、规则要不要改、谁该在什么时候知情</td><td>效率明显改善，但人的立场没动，阻力还在</td></tr>
+        <tr><td><b>系统层</b></td><td>谁在定义问题，利益、责任与边界怎么分布</td><td>这是能用已知解法处理的事，还是需要人改变习惯与关系；这件事最终该由谁承担</td><td>组织开始能自己处理下一轮变化，不必等你到场</td></tr>
+      </table>
+      <div class="quote" style="margin-top:26px">在原来的层级里把动作做到满分，通常只是把同一个问题做得更熟练。真正的升维，是敢重新问一句「我们到底在解决什么」。</div>
+      <p class="note">这套分层也决定了后面所有内容的顺序：先判断层级，再谈方法与动作。顺序反了，越努力越容易加固原来的困局。</p>
+    </div>
+  </section>
+
+  <section id="s2">
+    <div class="wrap">
+      <p class="kicker">02 / 判断</p>
+      <h2>起点不是找方案，是先分清两类问题</h2>
+      <p class="sub">我把管理里的问题大致分两类：一类有现成解法，另一类需要人改变做法、立场或彼此的关系。后者被当成前者处理，是咨询里最常见的浪费。</p>
+      <table>
+        <tr><th style="width:22%"></th><th>技术性问题</th><th>适应性挑战</th></tr>
+        <tr><td><b>本质</b></td><td>问题清楚，解法已知，只是还没做</td><td>问题本身有分歧，需要人改变习惯、立场或关系</td></tr>
+        <tr><td><b>谁上手</b></td><td>专家或有权限的人，按流程推进</td><td>与问题相关的人共同参与，把该承担的工作还回去</td></tr>
+        <tr><td><b>有效动作</b></td><td>定标准、配资源、排节点、验收</td><td>先诊断、把冲突摆到桌面、调节压力、给足支持再让人自己走</td></tr>
+        <tr><td><b>验证信号</b></td><td>交付完成，问题不再出现</td><td>相关的人开始用新的方式讨论和决策，而不是等你发话</td></tr>
+      </table>
+
+      <div class="pillar"><b>四种常见的误判</b><span>出现任何一种，都值得先停下来重新分层</span></div>
+      <div class="grid2">
+        <div class="card"><h3>把适应性挑战当技术性问题</h3><p>开更多会、加更多表、再上一套系统。动作都在事件层与流程层，真正需要松动的立场一点没动。</p></div>
+        <div class="card"><h3>用权威把问题压回去</h3><p>短期确实安静了，代价是坏消息不再往上走。你失去的不是面子，是下一轮判断所需的真实信息。</p></div>
+        <div class="card"><h3>自己把活全扛下来</h3><p>结果交付了，团队却没练到判断。下一次同类问题仍然只能找你，你也就再没机会升一层。</p></div>
+        <div class="card"><h3>过早给答案</h3><p>问题一旦被你的答案定义，其他人的真实诉求就消失了。多数时候先问三轮，比先讲一版方案更省时间。</p></div>
+      </div>
+
+      <div class="pillar"><b>落子前的三个问题</b><span>写在纸上，比在脑子里过一遍有效得多</span></div>
+      <ul class="list">
+        <li><h3>这件事里，哪些部分已知解法就能覆盖？</h3><p>先把能靠标准、流程、资源解决的部分切出来，别让它们占满全部注意力。</p></li>
+        <li><h3>剩下的部分，需要谁改变什么？</h3><p>把「要改变的东西」写成具体行为，而不是「提高意识」「加强协同」这类无法验收的词。</p></li>
+        <li><h3>这份改变，最终应该由谁承担？</h3><p>你负责把压力调到对方能承受又不能回避的区间，而不是替对方把答案做完。</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="s3">
+    <div class="wrap">
+      <p class="kicker">03 / 能力</p>
+      <h2>十项能力，分三组看</h2>
+      <p class="sub">能力不是标签，是「遇到这类事时，我能不能稳定地做出某个动作」。下面每一项都配了一个可以直接开始练的动作，先求用得上，再求说得清。</p>
+
+      <div class="pillar"><b>基础四力</b><span>先管住自己，才能把事拆清楚、把人对齐</span></div>
+      <div class="card">
+        <div class="cap"><p class="h">情绪自愈<span>FUEL</span></p><p class="d">先管理精力，再管理结果。</p><p class="a"><b>可练动作：</b>每天留一段不被打断的恢复时段；状态掉线时先复位，再做重要决定。</p></div>
+        <div class="cap"><p class="h">执行力<span>DELIVER</span></p><p class="d">把方向拆成可验收的成果。</p><p class="a"><b>可练动作：</b>每个目标写三个关键结果，每个结果配负责人与验收标准，不留「持续推进」这类节点。</p></div>
+        <div class="cap"><p class="h">结构思考<span>FRAME</span></p><p class="d">拆解问题，抓住主要矛盾。</p><p class="a"><b>可练动作：</b>先写一句「真正要解决的问题是什么」，再列约束、变量与可被放弃的项。</p></div>
+        <div class="cap"><p class="h">协同沟通<span>ALIGN</span></p><p class="d">对齐信息，让跨部门协作不靠记忆。</p><p class="a"><b>可练动作：</b>每次关键沟通后产出一页纸，写清共识、分歧、下一步与各自承诺。</p></div>
+      </div>
+
+      <div class="pillar"><b>人才三力</b><span>从看懂人，到把人放对，再到让人愿意一起走</span></div>
+      <div class="card">
+        <div class="cap"><p class="h">识人<span>SIGHT</span></p><p class="d">看懂人，才能看穿局。</p><p class="a"><b>可练动作：</b>先画利益相关者地图，再用一对一交谈验证动机，不用第一印象下结论。</p></div>
+        <div class="cap"><p class="h">用人<span>PLACE</span></p><p class="d">把对的人放进对的坑。</p><p class="a"><b>可练动作：</b>用关键岗位清单和能力证据做配置，把「我觉得他合适」换成「他做过什么可以支撑」。</p></div>
+        <div class="cap"><p class="h">驭人<span>MOVE</span></p><p class="d">让一群不情愿的人愿意一起走。</p><p class="a"><b>可练动作：</b>把反对者的顾虑写进方案，并邀请对方承担一段试点，让立场在事实里慢慢移动。</p></div>
+      </div>
+
+      <div class="pillar"><b>权力三力</b><span>权力不是位置，是把事情做成、并让它不依赖你</span></div>
+      <div class="card">
+        <div class="cap"><p class="h">谋权<span>SHAPE</span></p><p class="d">在拿到授权之前先建势。</p><p class="a"><b>可练动作：</b>先做一个可验证的小成果，再争取更大权限，全程保持授权者的信息同步。</p></div>
+        <div class="cap"><p class="h">掌权<span>HOLD</span></p><p class="d">权力是用来创造结果的，不是用来证明位置的。</p><p class="a"><b>可练动作：</b>把关键决策纳入联签与留痕机制，用制度守住边界，减少「特事特办」。</p></div>
+        <div class="cap"><p class="h">固权<span>STAY</span></p><p class="d">把个人影响力变成组织能力。</p><p class="a"><b>可练动作：</b>把高频判断写成清单与复盘库，给接班人留一段陪跑期，检验他能否独立做对。</p></div>
+      </div>
+      <p class="note">三组之间没有高低次序。基础四力不稳，人才与权力两组容易变成技巧；只练基础四力，又容易停在「把自己管得很好，但推不动组织」。</p>
+    </div>
+  </section>
+
+  <section id="s4">
+    <div class="wrap">
+      <p class="kicker">04 / 情境</p>
+      <h2>九章阶梯：把判断放进具体处境里练</h2>
+      <p class="sub">抽象道理听懂了不等于会做。我按三幕九章组织情境：入境先建立存在感，扎根把信任与规则立起来，破局再处理不确定与延续。每章只练一类判断。</p>
+      <table>
+        <tr><th style="width:9%">幕</th><th style="width:16%">章</th><th style="width:36%">这一章要练的判断</th><th>常见卡点</th></tr>
+        <tr><td rowspan="3"><b>入境</b><br>1–3 章</td><td><b>01 识局</b></td><td>先诊断，再动手；分清症状与病因</td><td>把第一个冒出来的问题当成真问题，一上任就大改</td></tr>
+        <tr><td><b>02 谋权</b></td><td>在授权之前先建势，先立小功再争空间</td><td>头衔到了、支持没到，急着用职位压人</td></tr>
+        <tr><td><b>03 用人</b></td><td>把对的人放进对的坑，用证据做配置</td><td>只换人不换规则，新的问题继续由旧流程生产</td></tr>
+        <tr><td rowspan="3"><b>扎根</b><br>4–6 章</td><td><b>04 驭势</b></td><td>让一群不情愿的人一起走，重排利益而不只靠说服</td><td>反复讲道理，却没碰反对者真正承担的成本</td></tr>
+        <tr><td><b>05 执权</b></td><td>把决策变成可验收的成果</td><td>有方向没节点，进度全靠一遍遍追问</td></tr>
+        <tr><td><b>06 掌权</b></td><td>用制度守住权力边界</td><td>「特事特办」变成常态，例外吞掉规则</td></tr>
+        <tr><td rowspan="3"><b>破局</b><br>7–9 章</td><td><b>07 固权</b></td><td>让组织不依赖任何一个人</td><td>关键判断只装在自己脑子里，一休假就停摆</td></tr>
+        <tr><td><b>08 破局</b></td><td>在信息不全时快速调整，同时保留回退余地</td><td>等完全确认才动，错过窗口；或一次全押不留退路</td></tr>
+        <tr><td><b>09 成业</b></td><td>让成功可以延续，把个体经验变成共同规则</td><td>复盘停在「这次做得不错」，没有沉淀成下次能用的东西</td></tr>
+      </table>
+      <p class="note">每一个情境都是一段真实职场切片：先给现场，再给一句两难，然后让你独立落子；选完才看后果、能力涨落与追问。顺序可以按需调整，但「先诊断、后动作」这一条不变。</p>
+    </div>
+  </section>
+
+  <section id="s5">
+    <div class="wrap">
+      <p class="kicker">05 / 训练</p>
+      <h2>一次训练怎么走：测—学—练—辅—升</h2>
+      <p class="sub">这五步是一个闭环，不是五节课。走完一轮会回到新的起点，下一轮的情境难度与聚焦能力随弱项调整。</p>
+      <div class="step"><div class="n">1</div><div><h3>测 · 先看清起点</h3><p>用一组情境判断题做基线，标出优势项与待提升项。目的是决定先练什么，不是给人贴标签或排名。</p></div></div>
+      <div class="step"><div class="n">2</div><div><h3>学 · 给判断装一个模型</h3><p>每项能力按「具体问题 → 类比场景 → 拆解 → 可套用的模型」讲一遍，先讲清楚为什么这里要调用这项能力。</p></div></div>
+      <div class="step"><div class="n">3</div><div><h3>练 · 进情境里落子</h3><p>一段现场、一个两难、三个选项。先独立选，再看专家基准、剧情后果与能力变化；选错比选对的复盘价值更高。</p></div></div>
+      <div class="step"><div class="n">4</div><div><h3>辅 · 复盘三问</h3><p>事实层：发生了什么、我当时依据什么判断；理论层：这个判断对应哪条原则；迁移层：换一个场景我还会这么选吗。再加一句追问——我是在回应问题，还是在回应自己的不安？</p></div></div>
+      <div class="step"><div class="n">5</div><div><h3>升 · 把判断沉淀下来</h3><p>能力变化回写档案，弱项自动进入下一轮情境；隔一段时间复测同类判断，看它是不是真的迁移了，而不只是当时听懂了。</p></div></div>
+      <div class="quote" style="margin-top:26px">训练有没有效，不看当下答对几题，看下一次在另一个场景里，你还选不选得对。</div>
+      <p class="note">刻意练习需要密度：同一能力要在不同处境里反复出现，才会从「知道」变成「顺手」。所以情境宁可小而多，不要一次讲完一整套管论。</p>
+    </div>
+  </section>
+
+  <section id="s6">
+    <div class="wrap">
+      <p class="kicker">06 / 人群</p>
+      <h2>三类人，三种练法</h2>
+      <p class="sub">这不是能力高低，而是起点不同：手里有的资源不同，要扛的风险不同，第一件该练对的事也不同。</p>
+      <div class="grid3">
+        <div class="card">
+          <div class="num">01 / 空降管理者</div>
+          <h3>陌生组织里先活下来</h3>
+          <p><b>处境：</b>权限有限、信息不全、旧关系稳固，所有人都在看你怎么开局。<br><br><b>先练：</b>识局、谋权、驭势。把前 90 天拆成可验收的小成果，别急着证明自己。<br><br><b>忌讳：</b>把上一家公司跑通的做法整套复制过来。</p>
+        </div>
+        <div class="card">
+          <div class="num">02 / 创业者</div>
+          <h3>在混沌里稳住方向</h3>
+          <p><b>处境：</b>资源紧、信息乱、方向常变，没人替你定义问题。<br><br><b>先练：</b>结构思考、执行力、破局。把「改方向」和「改打法」分开，减少全盘推翻。<br><br><b>忌讳：</b>每次遇到阻力都重做一遍战略，团队从此不再相信任何版本。</p>
+        </div>
+        <div class="card">
+          <div class="num">03 / 高潜人才</div>
+          <h3>没有职位权力也要推动事</h3>
+          <p><b>处境：</b>要跨部门拿结果，却没有调度权，只能靠共识与信用。<br><br><b>先练：</b>协同沟通、识人、用人（借力）。先把共同收益说清，再谈分工。<br><br><b>忌讳：</b>等「以后有权限了」再开始练影响力。</p>
+        </div>
+      </div>
+      <p class="note">同一段情境，三类人的合理选项可能完全不同。所以我不给统一标准答案，只看这个选择是否与你的处境、资源和阶段自洽。</p>
+    </div>
+  </section>
+
+  <section id="s7">
+    <div class="wrap">
+      <p class="kicker">07 / 议题</p>
+      <h2>咨询与教练里反复出现的几类问题</h2>
+      <p class="sub">这些是我长期整理的问题线索，不涉及任何具体客户与案例。你可以对照看看，自己眼下卡在哪一类。</p>
+      <div class="card">
+        <div class="topic"><h3>新岗位前 90 天</h3><p>先建立存在感，还是先动结构？多数情况下，顺序取决于你能拿到的信息与盟友，而不是取决于你的计划写得多完整。</p></div>
+        <div class="topic"><h3>团队交接</h3><p>接过来的不只是名单和项目，还有没说清的承诺、旧账与默契。把这些显性化，比立刻重排分工更重要。</p></div>
+        <div class="topic"><h3>跨部门推不动</h3><p>先看是流程漏了节点，还是责任与收益根本没对齐。后者加多少协作工具都无效。</p></div>
+        <div class="topic"><h3>变革阻力</h3><p>反对的人往往掌握你最需要的信息。把阻力当数据看，比当障碍清掉更划算。</p></div>
+        <div class="topic"><h3>无权威影响力</h3><p>不靠职位，靠把共同收益、对方成本与可验证的第一步说清楚，让对方有理由自己动。</p></div>
+        <div class="topic"><h3>精力与边界</h3><p>连续救火之后先下降的是判断质量，不是体力。给自己设恢复时段，是管理动作，不是休息安排。</p></div>
+        <div class="topic"><h3>提问的质量</h3><p>诊断式提问比急于给建议更能逼近真问题。先问清楚「谁在什么条件下会怎么做」，再谈方案。</p></div>
+        <div class="topic"><h3>工具越来越多之后</h3><p>方案可以由工具快速生成，「该解决哪个问题、由谁承担、到什么程度算好」仍然是人的判断。这一层反而更值钱了。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="s8">
+    <div class="wrap">
+      <p class="kicker">08 / 落地</p>
+      <h2>可以怎么用这套东西</h2>
+      <p class="sub">按你手上是「一个人的困境」还是「一群人的能力」来选，不用一次全上。</p>
+      <div class="grid2">
+        <div class="card"><h3>1v1 教练</h3><p>带一个真实困境来：现场做问题分层、把关键人物与利益摆清楚、复盘你已经做过的那个选择，最后落成一页行动单。</p></div>
+        <div class="card"><h3>小组工作坊</h3><p>同一情境多人独立落子，再看选项分布与各自理由。差异本身就是教材，比讲一遍理论更难被忘掉。</p></div>
+        <div class="card"><h3>情境沙盘</h3><p>按九章顺序分阶段推进，适合管培与高潜项目：每阶段只练一组能力，阶段之间留复测与迁移任务。</p></div>
+        <div class="card"><h3>组织诊断</h3><p>从流程、责任、信息三条线看「问题为什么反复发生」，输出一份能排期、能验收的改动清单。</p></div>
+      </div>
+
+      <div class="pillar"><b>先说清楚不做什么</b><span>边界讲明白，合作反而更省事</span></div>
+      <div class="notice">
+        <strong>四条边界</strong>
+        <p>· 不给统一标准答案：同一个情境，不同角色、不同阶段的合理选项不同。<br>
+        · 不套通用模板：先诊断，再决定用哪套框架；框架是工具，不是结论。<br>
+        · 不承诺速成：判断力靠反复落子与复盘，不靠听完一堂课。<br>
+        · 不写未经核实的成果数字：这一页只讲方法与做法，不拿案例替方法背书。</p>
+      </div>
+
+      <div class="btns" style="margin-top:30px">
+        <a class="cta" href="/services/">看三条服务主线</a>
+        <a class="cta alt" href="/methods/">翻方法库</a>
+        <a class="cta alt" href="/about/">了解我</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="tight"><div class="wrap">
+<div class="notice">
+  <strong>关于本站资料</strong>
+  <p>方法卡片与工具清单整理自我长期维护的知识库与自建方法体系：一部分是公开课程笔记的脱敏提炼，一部分是第三方公开资料的要点摘要，另一部分是本人设计的训练框架。本站只做要点整理与索引，不转载原文；不含客户信息、聊天记录、内部数据与任何未核实的第三方案例数据；个人履历数字由站长本人提供。如涉及原作者权益，欢迎来信调整或撤下。</p>
+</div>
+</div></section>
+
+
+  <section style="border-bottom:none">
+    <div class="wrap">
+      <div class="letter">
+        <div>
+          <h2>用一个真问题试一次</h2>
+          <p>不用准备完整项目计划，带上最近一个让你反复纠结的具体处境就够了。我们从分层开始，一步步往下拆。</p>
+        </div>
+        <a class="cta" href="mailto:39764023@qq.com?subject=%E8%AF%BB%E8%80%85%E6%9D%A5%E4%BF%A1%20%C2%B7%20%E4%BA%91%E6%9C%88%E5%B3%BB%E5%B2%AD">写信给我 ↗</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="sitemap">
+      <a href="/">首页</a>
+        <a href="/services/">服务与做法</a>
+        <a href="/questions/">常问问题</a>
+        <a href="/methods/">方法库</a>
+        <a href="/leadership/">升维领导力</a>
+        <a href="/digital/">数字化</a>
+        <a href="/writing/">文章</a>
+        <a href="/about/">关于</a>
+    </div>
+    <div class="foot">
+      <span>© 2026 杜淳滢 Jessie · 云月峻岭 · 由 GitHub Pages 托管</span>
+      <span><a href="/articles/">文章归档</a> · <a href="mailto:39764023@qq.com?subject=%E8%AF%BB%E8%80%85%E6%9D%A5%E4%BF%A1%20%C2%B7%20%E4%BA%91%E6%9C%88%E5%B3%BB%E5%B2%AD">读者来信</a> · 微信 yunlinyue · 公众号「大红帮帮您」</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
