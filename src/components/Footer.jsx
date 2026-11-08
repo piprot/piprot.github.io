@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom'
 import { nextOpen } from '../data/workshops'
 
+const FEEDBACK_EMAIL = '39764023@qq.com'
+const FEEDBACK_MAILTO = 'mailto:' + FEEDBACK_EMAIL + '?subject=' + encodeURIComponent('读者来信 · 云月峻岭')
+
 export default function Footer() {
   const nx = nextOpen()
   return (
@@ -27,8 +30,13 @@ export default function Footer() {
               <li><Link to="/hot/books" className="hover:text-[#0071e3] transition-colors">拆经典</Link></li>
               <li><Link to="/skills" className="hover:text-[#0071e3] transition-colors">拆技能工坊</Link></li>
               <li><a href="https://www.aibay.asia" target="_blank" rel="noreferrer" className="hover:text-[#0071e3] transition-colors">aibay.asia</a></li>
+              <li><a href={FEEDBACK_MAILTO} className="hover:text-[#0071e3] transition-colors">读者来信</a></li>
             </ul>
           </div>
+        </div>
+        <div className="mt-10 rounded-xl border border-black/[.06] bg-white/70 px-4 py-3 flex flex-col md:flex-row md:items-center justify-between gap-2">
+          <span className="text-[13px] text-[#6e6e73]">读到有想法、想提问，或想聊聊职场与业务？欢迎给站长写信。</span>
+          <a href={FEEDBACK_MAILTO} className="text-[13px] font-medium text-[#0071e3] hover:underline whitespace-nowrap">读者来信 · {FEEDBACK_EMAIL} ↗</a>
         </div>
         <div className="mt-10 pt-6 border-t border-black/[.06] flex flex-col md:flex-row justify-between gap-2 text-[12px] text-[#86868b]">
           <span>© 2026 云月峻岭</span>
