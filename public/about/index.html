@@ -318,7 +318,7 @@
   .foot-brand .fb-text b{font-size:16px;color:var(--ink);letter-spacing:.08em}
   .foot-brand .fb-text span{font-size:11.5px;color:var(--muted);letter-spacing:.04em}
 
-  /* 案例 · 客户视角四段式 */
+  /* 案例 · 客户视角五段式（含初始误判） */
   .case-grid{align-items:start}
   .case-card{display:flex;flex-direction:column}
   .case-flow{margin:18px 0 0;display:grid;gap:11px}
@@ -329,9 +329,12 @@
   .case-row.win{background:var(--tint);border-left:3px solid var(--accent);border-radius:0 9px 9px 0;padding:12px 14px;margin:3px -2px 0}
   .case-row.win dt{color:var(--accent)}
   .case-row.win dd{color:var(--ink);font-weight:600}
+  .case-row.miss{background:var(--soft);border-left:3px solid var(--muted);border-radius:0 9px 9px 0;padding:12px 14px;margin:1px -2px 0}
+  .case-row.miss dt{color:var(--ink)}
+  .case-row.miss dd{color:#3E4A46}
   @media(max-width:760px){
     .foot-brand .logo{width:40px;height:40px}
-    .case-row,.case-row.win{grid-template-columns:1fr;gap:3px}
+    .case-row,.case-row.win,.case-row.miss{grid-template-columns:1fr;gap:3px}
     .case-row dt{padding-top:0}
   }
 </style>
@@ -447,7 +450,7 @@
       
       <div class="notice">
         <p>方法卡片与工具清单，来自我长期维护的知识库与自建方法体系：一部分是公开课程笔记的脱敏提炼，一部分是第三方公开资料的要点摘要，另一部分是本人设计的训练框架。全站只做要点整理与索引，不转载原文。</p>
-        <p>案例页按「客户需求 → 客户预期 → 达成周期 → 超额实现客户期待」四段呈现多组议题合并、匿名化后的典型情境，不对应任何具体客户，不含客户信息、聊天记录、内部数据与具体成果数字，也不构成结果承诺。</p>
+        <p>案例页按「客户需求 → 当时判断错了什么 → 客户预期 → 达成周期 → 超额实现客户期待」五段呈现多组议题合并、匿名化后的典型情境；其中「当时判断错了什么」写的是同类情境里最常见的初始误判，不是对某一次咨询的复盘。不对应任何具体客户，不含客户信息、聊天记录、内部数据与具体成果数字，也不构成结果承诺。</p>
         <p>个人履历数字由本人提供。如涉及原作者权益，欢迎来信，我会及时调整或撤下。</p>
       </div>
 

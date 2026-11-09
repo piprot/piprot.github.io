@@ -305,7 +305,7 @@
   .foot-brand .fb-text b{font-size:16px;color:var(--ink);letter-spacing:.08em}
   .foot-brand .fb-text span{font-size:11.5px;color:var(--muted);letter-spacing:.04em}
 
-  /* 案例 · 客户视角四段式 */
+  /* 案例 · 客户视角五段式（含初始误判） */
   .case-grid{align-items:start}
   .case-card{display:flex;flex-direction:column}
   .case-flow{margin:18px 0 0;display:grid;gap:11px}
@@ -316,9 +316,12 @@
   .case-row.win{background:var(--tint);border-left:3px solid var(--accent);border-radius:0 9px 9px 0;padding:12px 14px;margin:3px -2px 0}
   .case-row.win dt{color:var(--accent)}
   .case-row.win dd{color:var(--ink);font-weight:600}
+  .case-row.miss{background:var(--soft);border-left:3px solid var(--muted);border-radius:0 9px 9px 0;padding:12px 14px;margin:1px -2px 0}
+  .case-row.miss dt{color:var(--ink)}
+  .case-row.miss dd{color:#3E4A46}
   @media(max-width:760px){
     .foot-brand .logo{width:40px;height:40px}
-    .case-row,.case-row.win{grid-template-columns:1fr;gap:3px}
+    .case-row,.case-row.win,.case-row.miss{grid-template-columns:1fr;gap:3px}
     .case-row dt{padding-top:0}
   }
 
