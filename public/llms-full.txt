@@ -3,15 +3,15 @@
 > 这是本站的扩展索引（llms-full.txt）。所有内容公开可访问，引用请注明来源与原链接。
 
 ## 关于
-云月峻岭是杜淳滢 Jessie 的个人咨询品牌，聚焦职场教练、管理辅导、数字化顾问与营销业绩提升。15 年+人力资源、12 年+销售经验，累计 30+ 全案、600+ 咨询。服务职场人与中小企业，线上服务覆盖全球中文区与英文区，不限时区。个案不具名、不承诺结果。
+云月峻岭是杜淳滢 Jessie 的个人写作与分享空间，聚焦职场成长记录、管理实践、数字化实践与营销观察。15 年+人力资源、12 年+销售经验，累计 30+ 案例研究、600+ 职场对话。线上交流覆盖全球中文区与英文区，不限时区。个案不具名、不对应具体主体。
 
 ## 主要栏目
-- 服务与做法 /services/ · 客户案例 /cases/ · 方法库 /methods/ · 常问问题 /questions/ · 关于我 /about/ · 联系我 /contact/
+- 方法与文章 /services/ · 实践笔记 /cases/ · 方法库 /methods/ · 常问问题 /questions/ · 关于我 /about/ · 联系我 /contact/
 - 升维领导力 /leadership/ · 数字化工具箱 /digital/ · 写作与观点 /writing/
 - 英文版 /en/ 起，路径结构与中文一致
 
 ## 全部文章（中文）
-- [客户访谈复盘](https://piprot.github.io/articles/posts/2026-10-09-interview-review.html) · 2026-10-09 · 案例复盘
+- [对方访谈复盘](https://piprot.github.io/articles/posts/2026-10-09-interview-review.html) · 2026-10-09 · 案例复盘
 - [汇报从结论讲起](https://piprot.github.io/articles/posts/2026-10-13-conclusion-first.html) · 2026-10-13 · 沟通表达
 - [自由职业先写清交付](https://piprot.github.io/articles/posts/2026-10-16-freelance-first.html) · 2026-10-16 · 职业转型
 - [生命之花看时间去向](https://piprot.github.io/articles/posts/2026-10-20-life-flower.html) · 2026-10-20 · 个人管理
@@ -23,7 +23,7 @@
 - [内容先修流水线](https://piprot.github.io/articles/posts/2026-11-08-content-pipeline.html) · 2026-11-08 · 方法框架
 
 ## All articles (English)
-- [From "I thought" to "I verified": a client interview review](https://piprot.github.io/en/articles/posts/2026-10-09-interview-review.html) · 2026-10-09 · Case review
+- [From "I thought" to "I verified": a interview review](https://piprot.github.io/en/articles/posts/2026-10-09-interview-review.html) · 2026-10-09 · Case review
 - [Lead with the conclusion, not the process](https://piprot.github.io/en/articles/posts/2026-10-13-conclusion-first.html) · 2026-10-13 · Communication
 - [Freelancing starts with defining what one person can deliver](https://piprot.github.io/en/articles/posts/2026-10-16-freelance-first.html) · 2026-10-16 · Career change
 - [The life flower is not a scoring game](https://piprot.github.io/en/articles/posts/2026-10-20-life-flower.html) · 2026-10-20 · Personal management
@@ -35,4 +35,4 @@
 - [Solo content starts with a repeatable pipeline](https://piprot.github.io/en/articles/posts/2026-11-08-content-pipeline.html) · 2026-11-08 · Framework
 
 ## 联系方式
-微信 yunlinyue · 公众号「大红帮帮您」· 30 分钟免费诊断，先聊再决定是否合作。
+微信 yunlinyue · 公众号「大红帮帮您」· 欢迎来信交流。
