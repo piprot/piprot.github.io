@@ -337,6 +337,15 @@
     .case-row,.case-row.win,.case-row.miss{grid-template-columns:1fr;gap:3px}
     .case-row dt{padding-top:0}
   }
+
+.head-info{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;padding:16px 0 10px}
+.head-tagline{margin:0;font-size:12.5px;letter-spacing:.1em;color:var(--muted)}
+.head-contact{display:flex;align-items:center;gap:14px;font-size:13px;color:var(--muted);flex-wrap:wrap}
+.head-contact a:hover{color:var(--accent)}
+.nav-main{min-height:0;justify-content:flex-start;padding-top:7px;padding-bottom:9px;border-top:1px solid var(--line)}
+.nav-main .links{flex:1}
+.nav-main .lang-switch{margin-left:auto}
+@media(max-width:760px){.head-info{padding:12px 0 8px}.head-tagline{display:none}.nav-main{flex-wrap:wrap}}
 </style>
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
 <meta name="twitter:image" content="https://piprot.github.io/assets/art-ridge.jpg">
@@ -360,36 +369,40 @@
 <div class="scroll-progress" aria-hidden="true"></div>
 
 <header>
-  <div class="wrap nav">
+  <div class="wrap head-info">
     <a class="brand" href="/"><svg class="logo brand-logo" viewbox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect x="2" y="2" width="60" height="60" rx="17" fill="none" stroke="currentColor" stroke-width="2" opacity=".25"/>
 <path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z" transform="translate(29 7) scale(1.06)" fill="var(--accent2)" stroke="none"/>
 <path d="M12 19h14M16 24h12" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" opacity=".5"/>
 <path d="M8 46 22 31l10 10 9-11 15 16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity=".35"/>
 <path d="M8 51 21 38l9 8 10-11 16 16" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M10 53h44" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".4"/></svg><span class="btext">云月峻岭<small>YUNYUE JUNLING</small></span></a>
+    <p class="head-tagline">职场咨询 · 管理数字化 · 营销业绩提升</p>
+    <div class="head-contact"><span>微信 yunlinyue</span><a href="mailto:39764023@qq.com">39764023@qq.com</a><span>服务地区：上海 · 宁波</span></div>
+  </div>
+  <div class="wrap nav nav-main">
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">菜单</button>
     <nav class="links" id="site-nav">
       <a href="/">首页</a>
-      <div class="nav-group">
+      <div class="nav-group on">
         <button type="button" class="nav-label">服务</button>
         <div class="nav-sub">
         <a href="/services/">服务与做法</a>
-        <a href="/about/">关于我</a>
-        <a href="/contact/">联系</a>
-        </div>
-      </div>
-      <a href="/leadership/" class="on">升维领导力</a>
-      <div class="nav-group">
-        <button type="button" class="nav-label">案例</button>
-        <div class="nav-sub">
-        <a href="/cases/">客户案例</a>
+        <a href="/leadership/" class="on">升维领导力</a>
         <a href="/digital/">数字化工具箱</a>
         <a href="/digital/workbench/">AI 工作台</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button type="button" class="nav-label">案例与方法</button>
+        <div class="nav-sub">
+        <a href="/cases/">客户案例</a>
         <a href="/methods/">方法库</a>
         <a href="/articles/">文章</a>
         </div>
       </div>
       <a href="/questions/">常问问题</a>
+      <a href="/about/">关于我</a>
+      <a href="/contact/">联系</a>
     </nav><a class="lang-switch" href="../../../en/leadership/game/index.html" aria-label="Switch language" hreflang="en">EN</a>
   </div>
 </header>
