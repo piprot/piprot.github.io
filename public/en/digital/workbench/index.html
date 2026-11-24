@@ -598,5 +598,48 @@
   }
 })();
 </script>
+<style id="float-contact-css">
+.float-contact{position:fixed;right:22px;bottom:22px;z-index:60;font-family:inherit}
+.float-contact .fc-panel{position:absolute;right:0;bottom:64px;width:236px;background:var(--card,#fff);border:1px solid var(--line,#EBE5D4);border-radius:14px;box-shadow:0 14px 38px rgba(23,64,46,.16);padding:18px 18px 16px;opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .18s,transform .18s,visibility .18s}
+.float-contact.open .fc-panel{opacity:1;visibility:visible;transform:translateY(0)}
+.fc-panel .fc-t{font-size:15px;font-weight:700;color:var(--ink,#17402E);margin:0 0 4px}
+.fc-panel .fc-d{font-size:12.5px;color:var(--muted,#66776D);line-height:1.6;margin:0 0 12px}
+.fc-panel .fc-code{font-size:16px;font-weight:700;letter-spacing:.04em;color:var(--accent,#DB6B2E);word-break:break-all}
+.fc-copy{display:block;width:100%;min-height:44px;margin-top:12px;border:0;border-radius:10px;background:var(--accent,#DB6B2E);color:#fff;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.fc-copy:hover{background:#C35A22}
+.fc-copy:focus-visible,.float-contact .fc-btn:focus-visible{outline:3px solid var(--accent2,#F0A83C);outline-offset:2px}
+.float-contact .fc-btn{width:52px;height:52px;min-height:44px;border:0;border-radius:50%;background:var(--accent,#DB6B2E);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 8px 22px rgba(23,64,46,.22);transition:transform .18s,background .18s}
+.float-contact .fc-btn:hover{transform:translateY(-2px);background:#C35A22}
+.float-contact .fc-btn svg{width:26px;height:26px;fill:currentColor}
+@media(max-width:480px){.float-contact{right:14px;bottom:14px}}
+@media(prefers-reduced-motion:reduce){.float-contact .fc-panel,.float-contact .fc-btn{transition:none}}
+</style>
+<div class="float-contact" id="float-contact">
+  <div class="fc-panel" id="fc-panel" role="dialog" aria-label="微信联系方式">
+    <p class="fc-t">微信联系</p>
+    <p class="fc-d">扫码不便？复制微信号，添加时简单说明来意即可。</p>
+    <div class="fc-code" id="fc-code">yunlinyue</div>
+    <button class="fc-copy" type="button" id="fc-copy">复制微信号</button>
+  </div>
+  <button class="fc-btn" type="button" id="fc-btn" aria-label="展开微信联系方式" aria-expanded="false" aria-controls="fc-panel">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12.04 2C6.5 2 2 5.9 2 10.65c0 2.72 1.45 5.15 3.72 6.76L5 20.5l3.33-1.7c1.18.4 2.44.62 3.71.62h.4c-.25-.6-.38-1.24-.38-1.9 0-4.7 4.5-8.52 10.04-8.52.35 0 .7.03 1.04.08C21.6 5.2 17.36 2 12.04 2ZM8.7 8.32a1.2 1.2 0 1 1 0-2.4 1.2 1.2 0 0 1 0 2.4Zm6.7 0a1.2 1.2 0 1 1 0-2.4 1.2 1.2 0 0 1 0 2.4Z"/><path d="M22 13.3c0-3.5-3.4-6.33-7.6-6.33S6.8 9.8 6.8 13.3c0 3.5 3.4 6.34 7.6 6.34.96 0 1.9-.15 2.76-.43l2.62 1.34-.72-2.27C20.7 17.1 22 15.36 22 13.3Zm-10.1-2.1a.95.95 0 1 1 0-1.9.95.95 0 0 1 0 1.9Zm5.1 0a.95.95 0 1 1 0-1.9.95.95 0 0 1 0 1.9Z" opacity=".9"/></svg>
+  </button>
+</div>
+<script>
+(function(){
+  var box=document.getElementById('float-contact');
+  if(!box)return;
+  var btn=document.getElementById('fc-btn'),panel=document.getElementById('fc-panel'),copy=document.getElementById('fc-copy');
+  function toggle(open){box.classList.toggle('open',open);btn.setAttribute('aria-expanded',open?'true':'false');btn.setAttribute('aria-label',open?'收起微信联系方式':'展开微信联系方式');}
+  btn.addEventListener('click',function(e){e.stopPropagation();toggle(!box.classList.contains('open'));});
+  document.addEventListener('click',function(e){if(box.classList.contains('open')&&!box.contains(e.target))toggle(false);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')toggle(false);});
+  copy.addEventListener('click',function(){
+    var v='yunlinyue',old=copy.textContent,done=function(){copy.textContent='已复制 ✓';copy.classList.add('ok');setTimeout(function(){copy.textContent=old;copy.classList.remove('ok');},1800);};
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(v).then(done,function(){fallback(v);});}else{fallback(v);}
+    function fallback(val){var t=document.createElement('textarea');t.value=val;t.setAttribute('readonly','');t.style.position='fixed';t.style.opacity='0';document.body.appendChild(t);t.select();try{document.execCommand('copy');done();}catch(err){copy.textContent='请手动复制';}document.body.removeChild(t);}
+  });
+})();
+</script>
 </body>
 </html>
