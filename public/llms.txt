@@ -1,0 +1,31 @@
+# 云月峻岭 · 杜淳滢 Jessie
+
+> 职场教练 / 管理辅导 / 数字化顾问 / 营销业绩提升。服务职场人与中小企业，线上覆盖全球中文区与英文区，线下以上海、宁波为主。本站内容均为个人经验与方法论，个案不具名、不承诺结果。
+
+## 核心页面
+- [首页](https://piprot.github.io/)：定位、服务方向、客户情境与联系方式（微信 yunlinyue）。
+- [服务与做法](https://piprot.github.io/services/)：职场教练、升维领导力、营销业绩提升的方向与做法。
+- [客户案例](https://piprot.github.io/cases/)：脱敏情境卡，按场景分类，展示问题与做法。
+- [方法库](https://piprot.github.io/methods/)：可复用的思考框架与工具。
+- [常问问题](https://piprot.github.io/questions/)：25 个关于咨询方式、边界与流程的问答。
+- [关于我](https://piprot.github.io/about/)：15 年+人力资源、12 年+销售经验，30+ 全案、600+ 咨询。
+- [联系我](https://piprot.github.io/contact/)：微信 / 邮箱 / 公众号，30 分钟免费诊断。
+- [文章归档](https://piprot.github.io/articles/)：职场咨询、销售框架、内容方法与数字化落地的长文。
+
+## 服务方向
+- [升维领导力](https://piprot.github.io/leadership/)：带团队、授权与领导力进阶。
+- [数字化工具箱](https://piprot.github.io/digital/)：流程梳理与数字化落地。
+- [协作工作坊](https://piprot.github.io/leadership/workshop/)：团队共创与工作坊设计。
+
+## 写作与内容
+- [写作与观点](https://piprot.github.io/writing/)：专栏与观点文章。
+- [AI 拆书工作台](https://piprot.github.io/chaiAI/)：拆书方法与知识整理工具。
+
+## 英文版 / English
+- [Home (EN)](https://piprot.github.io/en/)
+- [Services (EN)](https://piprot.github.io/en/services/)
+- [Cases (EN)](https://piprot.github.io/en/cases/)
+- [Articles (EN)](https://piprot.github.io/en/articles/)
+
+## 引用说明
+引用本站内容请注明来源「云月峻岭 · 杜淳滢 Jessie」与原页面链接。本站不提供自动化抓取的付费内容，全部页面公开可访问。

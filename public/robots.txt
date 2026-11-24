@@ -1,4 +1,26 @@
 User-agent: *
 Allow: /
 
+# 搜索与 AI 爬虫显式放行（GEO：允许引用与索引）
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: PetalBot
+Allow: /
+
 Sitemap: https://piprot.github.io/sitemap.xml
